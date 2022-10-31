@@ -8,16 +8,25 @@ import java.util.List;
 
 @Component
 public class ProductRepository {
+    private final int countInitProducts = 5;
+    private final int minPrice = 200;
+    private final int maxPrice = 400;
     private List<Product> products = new ArrayList<>();
 
-    public void getProducts(int count) {
-        if (count == -1) {
+    {
+        for (int i = 0; i < countInitProducts; i++) {
+            products.add(new Product((long) i, "Product" + i, Math.floor(Math.random() * (maxPrice - minPrice + 1) + minPrice)));
+        }
+    }
+
+    public void listAvailableProducts() {
             for (Product elem : products) {
                 System.out.println(elem.toString());
             }
-        } else {
-            System.out.println(products.get(count).toString());
-        }
+    }
+
+    public Product getProductsId(int id) {
+        return products.get(id);
     }
 
     public void setProducts(Product product) {
