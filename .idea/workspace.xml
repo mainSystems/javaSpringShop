@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd6520b3-cd2e-4ae6-afb3-6ce149ccd3ed" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/Shop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +62,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\java\javaSpringStorage\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\java\javaSpringStorage\src\main\resources" />
     </key>
   </component>
   <component name="RunManager">

@@ -1,13 +1,13 @@
 package main.systems;
 
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-@Component
+@SpringBootApplication
 public class Shop {
     public static Cart cart;
     private static int productId;
