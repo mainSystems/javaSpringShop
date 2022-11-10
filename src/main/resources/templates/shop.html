@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Shop</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+</head>
+<body>
+<div class="container products" align="center">
+
+    <h3>Products List</h3>
+    <a th:href="@{/shop/new_cart}" class="btn btn-primary btn-sm mb-3" >Create New Cart</a>
+    <a th:href="@{/shop/list_cart}" class="btn btn-primary btn-sm mb-3" target="_blank">List Cart</a>
+    <table style="width:80%" border="1"
+           class = "table table-striped table-responsive-md">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Cost</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="product:${productList}">
+            <td th:text="${product.id}"></td>
+            <td th:text="${product.title}"></td>
+            <td th:text="${product.cost}"></td>
+            <td> <a th:href="@{/addProduct/{id}(id=${product.id})}"
+                    class="btn btn-primary">Add</a>
+                <a th:href="@{/deleteProduct/{id}(id=${product.id})}"
+                   class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

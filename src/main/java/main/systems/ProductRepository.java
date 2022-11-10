@@ -2,10 +2,12 @@ package main.systems;
 
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Controller
 @Component
 public class ProductRepository {
     private final int countInitProducts = 5;
@@ -15,14 +17,14 @@ public class ProductRepository {
 
     {
         for (int i = 0; i < countInitProducts; i++) {
-            products.add(new Product((long) i, "Product" + i, Math.floor(Math.random() * (maxPrice - minPrice + 1) + minPrice)));
+            products.add(new Product((long) i, "Product_" + i, Math.floor(Math.random() * (maxPrice - minPrice + 1) + minPrice)));
         }
     }
 
     public void listAvailableProducts() {
-            for (Product elem : products) {
-                System.out.println(elem.toString());
-            }
+        for (Product elem : products) {
+            System.out.println(elem.toString());
+        }
     }
 
     public Product getProductsId(int id) {
@@ -32,4 +34,9 @@ public class ProductRepository {
     public void setProducts(Product product) {
         products.add(product);
     }
+
+    public List<Product> getProducts() {
+        return products;
+    }
 }
+
