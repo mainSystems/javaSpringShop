@@ -13,19 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @RequestMapping("/shop")
 public class ShopController {
-
+    @Autowired
     private ProductRepository productRepository;
+    @Autowired
     private Cart cart;
-
-    @Autowired
-    public void ProductRepository(ProductRepository productRepository) {
-        this.productRepository = productRepository;
-    }
-
-    @Autowired
-    public void Cart(Cart cart) {
-        this.cart = cart;
-    }
 
 
     @RequestMapping(value = "/mainPage", method = RequestMethod.GET)

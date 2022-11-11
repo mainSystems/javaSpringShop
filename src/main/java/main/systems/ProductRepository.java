@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import java.util.ArrayList;
 import java.util.List;
 
-@Controller
 @Component
 public class ProductRepository {
     private final int countInitProducts = 5;
