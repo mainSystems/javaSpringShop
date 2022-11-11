@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd6520b3-cd2e-4ae6-afb3-6ce149ccd3ed" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/list_cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,24 +34,21 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
-      </GitPushTagMode>
-    </option>
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2GgOjfg2BE15YjV0Xk7I3tzNdWX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2HKFBcQQzL62sVGz2C5zOR91wVm" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -53,24 +58,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\java\javaSpringStorage\src\main\java" />
+      <recent name="C:\java\javaSpringShop\src\main\resources\templates" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\java\javaSpringStorage\src\main\resources" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="main.systems.SpringShop" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Shop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Shop (1)">
+    <configuration name="Shop (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.systems.Shop" />
-      <module name="javaSpringShop" />
+      <module name="SpringShop" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.systems.*" />
@@ -81,20 +83,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Shop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.systems.SpringShop.Shop" />
+      <module name="SpringShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.systems.SpringShop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringShopApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.systems.SpringShop.SpringShopApplication" />
+      <module name="SpringShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.systems.SpringShop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Shop (1)" />
         <item itemvalue="Application.Shop" />
+        <item itemvalue="Application.SpringShopApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cd6520b3-cd2e-4ae6-afb3-6ce149ccd3ed" name="Changes" comment="" />
-      <created>1666806896969</created>
+      <changelist id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="" />
+      <created>1668025735403</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666806896969</updated>
+      <updated>1668025735403</updated>
     </task>
     <servers />
   </component>
@@ -108,9 +138,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
