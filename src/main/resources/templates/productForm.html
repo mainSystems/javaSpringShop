@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Add/Del Product Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Add/Del Product Form</h1>
+<form action="#" th:action="@{/shop/addProduct}" th:object="${countProducts}" method="post">
+    <p>Product Id: <input type="number" th:field="*{id}" /></p>
+    <p>Count: <input type="number" th:field="*{count}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

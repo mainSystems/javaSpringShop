@@ -1,12 +1,12 @@
 package main.systems.controllers;
 
 import main.systems.Cart;
+import main.systems.CountProducts;
 import main.systems.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -22,7 +22,7 @@ public class ShopController {
     @RequestMapping(value = "/mainPage", method = RequestMethod.GET)
     private String getProducts(Model model) {
         model.addAttribute("productList", productRepository.getProducts());
-        return "shop";
+        return "mainPage";
     }
 
     @RequestMapping(value = "/new_cart", method = RequestMethod.GET)
@@ -48,5 +48,18 @@ public class ShopController {
         }
         return "list_cart";
     }
+
+    @GetMapping("/addProduct")
+    public String addProductForm(Model model) {
+        model.addAttribute("countProducts", new CountProducts());
+        return "productForm";
+    }
+
+    @PostMapping("/addProduct")
+    public String addProductSubmit(@ModelAttribute CountProducts greeting, Model model) {
+        model.addAttribute("greeting", greeting);
+        return "result";
+    }
+
 
 }
