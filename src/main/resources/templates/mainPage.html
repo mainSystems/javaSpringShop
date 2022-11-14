@@ -30,12 +30,9 @@
             <td th:text="${product.title}"></td>
             <td th:text="${product.cost}"></td>
             <td>
-                <input type="text" id="countAdd" name="count" th:value="*{countAdd}"/>
-                <a th:href="@{/shop/addProduct/{id}(id=${product.id})}"
-                   class="btn btn-primary">Add</a> <br/>
-                <input type="text" id="countDel" name="count" th:value="*{countDel}"/>
-                <a th:href="@{/shop/deleteProduct/{id}(id=${product.id})}"
-                   class="btn btn-danger">Delete</a>
+<!--                <input type="text" id="countAdd" name="count" th:value="*{countAdd}"/>-->
+                <a th:href="@{/shop/addProduct?idProduct={id}(id=${product.id})}"
+                   class="btn btn-primary">Add/Delete</a> <br/>
             </td>
         </tr>
         </tbody>

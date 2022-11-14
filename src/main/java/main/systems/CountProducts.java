@@ -3,7 +3,7 @@ package main.systems;
 public class CountProducts {
 
     private int id;
-    private String count;
+    private int count;
 
     public int getId() {
         return id;
@@ -13,11 +13,11 @@ public class CountProducts {
         this.id = id;
     }
 
-    public String getCount() {
+    public int getCount() {
         return count;
     }
 
-    public void setCount(String count) {
+    public void setCount(int count) {
         this.count = count;
     }
 }
