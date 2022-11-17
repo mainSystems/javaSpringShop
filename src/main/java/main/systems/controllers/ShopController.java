@@ -1,18 +1,18 @@
 package main.systems.controllers;
 
-import main.systems.Cart;
-import main.systems.CountProducts;
-import main.systems.Product;
-import main.systems.ProductRepository;
+import main.systems.services.Cart;
+import main.systems.data.CountProducts;
+import main.systems.data.Product;
+import main.systems.repositories.ProductRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.tomcat.jni.LibraryNotFoundError;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Controller
 @RequestMapping("/shop")
@@ -25,9 +25,12 @@ public class ShopController {
 
 
     @RequestMapping(value = "/mainPage", method = RequestMethod.GET)
-    private String getProducts(Model model) {
-        model.addAttribute("productList", productRepository.getProducts());
-        return "mainPage";
+    @ResponseBody
+    private List<Product> getProducts() {
+        return productRepository.getProducts();
+//    private String getProducts(Model model) {
+//        model.addAttribute("productList", productRepository.getProducts());
+//        return "mainPage";
     }
 
     @RequestMapping(value = "/new_cart", method = RequestMethod.GET)

@@ -1,4 +1,4 @@
-package main.systems;
+package main.systems.data;
 
 public class CountProducts {
 

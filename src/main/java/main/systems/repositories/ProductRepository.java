@@ -1,8 +1,8 @@
-package main.systems;
+package main.systems.repositories;
 
 
+import main.systems.data.Product;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
 
 import java.util.ArrayList;
 import java.util.List;
