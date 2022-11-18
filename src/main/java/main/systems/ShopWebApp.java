@@ -7,9 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class ShopWebApp {
-//    private static int productId;
-//    private static int count;
-//    private static boolean status = true;
     private static final Logger logger = LogManager.getLogger(ShopWebApp.class);
 
     public static void main(String[] args) {

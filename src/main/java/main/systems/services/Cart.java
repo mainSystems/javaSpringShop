@@ -42,15 +42,29 @@ public class Cart {
         }
     }
 
-    public void listCart() {
-        cart.forEach((key, value) -> System.out.println(key + " " + value));
-    }
-
     public int getCartSize() {
         return cart.size();
     }
 
+//    public Map<Product, Integer> getCart() {
+//        if (cart.size() == 0) {
+//            logger.info("Cart empty: " + cart);
+//        } else {
+//            logger.info("cart is:  " + cart);
+//        }
+//        return cart;
+//    }
+
     public Map<Product, Integer> getCart() {
         return cart;
+    }
+
+    public Integer getCartProductCount(Product product) {
+        Integer productCount = cart.get(product);
+        if (productCount != null) {
+            return productCount;
+        } else {
+            return 0;
+        }
     }
 }

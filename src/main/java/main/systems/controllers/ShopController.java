@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/shop")
@@ -43,19 +44,23 @@ public class ShopController {
 
 
     @RequestMapping(value = "/list_cart", method = RequestMethod.GET)
-    private String list_cart(Model model) {
-        if (cart != null) {
-            if (cart.getCartSize() == 0) {
-                logger.info("Корзина пуста: " + cart);
-                model.addAttribute("info", "Cart is empty: " + cart);
-                return "info";
-            } else {
-                logger.info("Используемая корзина:  " + cart);
-                model.addAttribute("listCart", cart.getCart());
-            }
-        }
-        return "list_cart";
+    @ResponseBody
+    private Map<Product, Integer> list_cart() {
+        return cart.getCart();
     }
+//    private String list_cart(Model model) {
+//        if (cart != null) {
+//            if (cart.getCartSize() == 0) {
+//                logger.info("Корзина пуста: " + cart);
+//                model.addAttribute("info", "Cart is empty: " + cart);
+//                return "info";
+//            } else {
+//                logger.info("Используемая корзина:  " + cart);
+//                model.addAttribute("listCart", cart.getCart());
+//            }
+//        }
+//        return "list_cart";
+//    }
 
     @GetMapping("/addProduct")
     public String addProductForm(@RequestParam String idProduct, Model model) {
@@ -101,4 +106,36 @@ public class ShopController {
         return "redirect:" + referer;
     }
 
+    @GetMapping("/changeProductCount")
+    @ResponseBody
+    public void changeProductCount(@RequestParam int productId, @RequestParam int productCount ) {
+        String isDel = (productCount < 0) ? "del" : "add";
+        switch (isDel) {
+            case "add": {
+                if (cart != null) {
+                    Product product = productRepository.getProductsId(productId);
+                    cart.addProducts(product, productCount);
+                } else {
+                    logger.info("Create cart first");
+                }
+                break;
+            }
+            case "del": {
+                if (cart != null) {
+                    Product product = productRepository.getProductsId(productId);
+                    cart.delProduct(product, productCount * -1);
+                } else {
+                    logger.info("Create cart first");
+                }
+                break;
+            }
+        }
+    }
+
+    @GetMapping("/getProductCount")
+    @ResponseBody
+    public Integer getProductCount(@RequestParam int productId) {
+        Product product = productRepository.getProductsId(productId);
+        return cart.getCartProductCount(product);
+    }
 }

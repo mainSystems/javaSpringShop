@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div class="container" ng-controller="indexController">
+<div class="container products" align="center" ng-controller="indexController">
     <h3>Products List</h3>
     <a href="shop/new_cart" class="btn btn-primary btn-sm mb-3">Create New Cart</a>
     <a href="shop/list_cart" class="btn btn-primary btn-sm mb-3" target="_blank">List Cart</a>
@@ -33,7 +33,11 @@
             <td>{{product.cost}}</td>
             <td>
                 <button class="btn btn-outline-info" ng-click="changeProductCount(product.id, -1)">-</button>
-                {{initCartCountProducts}}
+<!--                <span ng-repeat="productIdCount in getProductCount(product.id)">{{productIdCount}}</span>-->
+                <span ng-init="productCount = getProductCount(product.id)">{{productCount}}</span>
+<!--                <span ng-init="getProductCount(product.id)">{{productCount}}</span>-->
+<!--                <span>{{initCartCountProducts}}</span>-->
+<!--                <script>getProductCount(product.id);</script>-->
                 <button class="btn btn-outline-info" ng-click="changeProductCount(product.id, 1)">+</button>
             </td>
             <td>
