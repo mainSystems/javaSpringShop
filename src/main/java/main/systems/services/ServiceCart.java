@@ -1,19 +1,19 @@
 package main.systems.services;
 
 import main.systems.data.Product;
+import main.systems.repositories.CartRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.springframework.context.annotation.Scope;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.HashMap;
 import java.util.Map;
 
 @Component
-@Scope("prototype")
-public class Cart {
-    private Map<Product, Integer> cart = new HashMap<>();
-    private static final Logger logger = LogManager.getLogger(Cart.class);
+public class ServiceCart {
+    @Autowired
+    CartRepository cartRepository;
+    private static final Logger logger = LogManager.getLogger(ServiceCart.class);
 
 
     public void delProduct(Product product, Integer count) {
@@ -21,46 +21,40 @@ public class Cart {
             logger.info("Count of %s to work is 0, nothing to do \n", product.getTitle());
             return;
         }
-        if (cart.containsKey(product)) {
-            if (cart.get(product).compareTo(count) > 0) {
-                cart.put(product, cart.get(product) - count);
-            } else if (cart.get(product).compareTo(count) == 0) {
+        if (cartRepository.isContainKey(product)) {
+            if (cartRepository.getCountProducts(product).compareTo(count) > 0) {
+                cartRepository.updateProduct(product, count);
+            } else if (cartRepository.getCountProducts(product).compareTo(count) == 0) {
                 logger.info("There are no more products of %s \n", product.getTitle());
-                cart.remove(product);
+                cartRepository.deleteProduct(product);
             } else {
                 logger.info("we cant delete more than we have");
                 logger.info("products of %s will be removed \n", product.getTitle());
-                cart.remove(product);
+                cartRepository.deleteProduct(product);
             }
         }
     }
 
     public void addProducts(Product product, Integer count) {
         if (product != null && count > 0) {
-            cart.merge(product, count, Integer::sum);
-            logger.info("cart = " + cart);
+            cartRepository.addProduct(product, count);
         }
     }
 
-    public int getCartSize() {
-        return cart.size();
-    }
-
-//    public Map<Product, Integer> getCart() {
-//        if (cart.size() == 0) {
-//            logger.info("Cart empty: " + cart);
-//        } else {
-//            logger.info("cart is:  " + cart);
-//        }
-//        return cart;
+//    public int getCartSize() {
+//        return cart.size();
 //    }
 
     public Map<Product, Integer> getCart() {
-        return cart;
+        return cartRepository.getCart();
+    }
+
+    public void createNewCart() {
+        cartRepository = new CartRepository();
     }
 
     public Integer getCartProductCount(Product product) {
-        Integer productCount = cart.get(product);
+        Integer productCount = cartRepository.getCountProducts(product);
         if (productCount != null) {
             return productCount;
         } else {

@@ -14,8 +14,12 @@
 
 <div class="container products" align="center" ng-controller="indexController">
     <h3>Products List</h3>
-    <a href="shop/new_cart" class="btn btn-primary btn-sm mb-3">Create New Cart</a>
-    <a href="shop/list_cart" class="btn btn-primary btn-sm mb-3" target="_blank">List Cart</a>
+
+    <div>
+        <button class="btn btn-primary btn-sm mb-3" ng-click="newCart()">Create New cart</button>
+        <a href="shop/list_cart" class="btn btn-primary btn-sm mb-3" target="_blank">List Cart</a>
+    </div>
+
     <table style="width:80%" border="1"
            class="table table-hover">
         <thead>
@@ -27,15 +31,17 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="product in productList">
+        <tr ng-repeat="product in productList" data-ng-init="getProductCount(product.id)">
             <td>{{product.id}}</td>
             <td>{{product.title}}</td>
             <td>{{product.cost}}</td>
             <td>
                 <button class="btn btn-outline-info" ng-click="changeProductCount(product.id, -1)">-</button>
 <!--                <span ng-repeat="productIdCount in getProductCount(product.id)">{{productIdCount}}</span>-->
-                <span ng-init="productCount = getProductCount(product.id)">{{productCount}}</span>
-<!--                <span ng-init="getProductCount(product.id)">{{productCount}}</span>-->
+<!--                <span ng-init="productCount=getProductCount(product.id)">{{productCount}}</span>-->
+                <span>{{map.get(product.id)}</span>
+<!--                <span>{{productCount}}</span>-->
+<!--                <span data-ng-init="getProductCount(product.id)">{{productCount}}</span>-->
 <!--                <span>{{initCartCountProducts}}</span>-->
 <!--                <script>getProductCount(product.id);</script>-->
                 <button class="btn btn-outline-info" ng-click="changeProductCount(product.id, 1)">+</button>

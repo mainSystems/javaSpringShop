@@ -1,6 +1,7 @@
 angular.module('appShop', []).controller('indexController', function($scope, $http) {
     const contextPath='http://localhost:8180/app/shop';
 
+$scope.map = new Map();
 
     $scope.loadProducts = function() {
         $http.get(contextPath + '/mainPage')
@@ -10,22 +11,12 @@ angular.module('appShop', []).controller('indexController', function($scope, $ht
         });
     };
 
-
-//    $scope.loadCart = function() {
-//        $http.get(contextPath + '/list_cart')
-//        .then(function (response){
-//            console.log(response);
-//            console.log(angular.equals(response.data, {}));
-//            if(angular.equals(response.data, {})){
-////                $scope.loadCart = {
-////                                        "Product{id=0, title='Product_0', cost=0.0}": 00,
-////                                        "Product{id=1, title='Product_1', cost=0.0}": 00
-////                                    }
-////                console.log($scope.loadCart);
-//            }
-//            $scope.loadCart = response.data;
-//        });
-//    };
+    $scope.newCart = function() {
+        $http.get(contextPath + '/new_cart')
+        .then(function (response){
+            console.log(response);
+        });
+    };
 
     $scope.changeProductCount = function(productId, productCount) {
         $http({
@@ -50,10 +41,12 @@ angular.module('appShop', []).controller('indexController', function($scope, $ht
             }).then(function(response) {
                 console.log(response);
                 $scope.productCount = response.data;
+                console.log(productId);
+                $scope.map.set(productId,$scope.productCount);
+                console.log($scope.map);
             });
         }
 
-//    $scope.getProductCount();
-//    $scope.loadCart();
+
     $scope.loadProducts();
 });

@@ -20,12 +20,6 @@ public class ProductRepository {
         }
     }
 
-    public void listAvailableProducts() {
-        for (Product elem : products) {
-            System.out.println(elem.toString());
-        }
-    }
-
     public Product getProductsId(int id) {
         return products.get(id);
     }
@@ -37,5 +31,6 @@ public class ProductRepository {
     public List<Product> getProducts() {
         return products;
     }
+
 }
 
