@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CartRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceProduct.java" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="moving to angularjs + change scheme to repository-service-controller">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/services/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +126,14 @@
       <option name="presentableId" value="Default" />
       <updated>1668025735403</updated>
     </task>
+    <task id="LOCAL-00001" summary="moving to angularjs + change scheme to repository-service-controller">
+      <created>1668880090401</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668880090401</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,5 +146,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="moving to angularjs + change scheme to repository-service-controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="moving to angularjs + change scheme to repository-service-controller" />
   </component>
 </project>
