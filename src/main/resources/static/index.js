@@ -1,4 +1,5 @@
-angular.module('appShop', []).controller('indexController', function($scope, $http) {
+angular.module('appShop', [])
+    .controller('indexController', function($scope, $http) {
     const contextPath='http://localhost:8180/app/shop';
 
     $scope.mapProductsCount = new Map();
@@ -45,7 +46,6 @@ angular.module('appShop', []).controller('indexController', function($scope, $ht
                 console.log($scope.mapProductsCount);
             });
         }
-
 
     $scope.loadProducts();
 });
