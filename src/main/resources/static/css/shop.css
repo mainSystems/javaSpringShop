@@ -1,0 +1,43 @@
+table.containerProducts {
+  font-family: "times new roman";
+  border: 1px solid #1C6EA4;
+  background-color: #4EB1BA;
+  width: 60%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.containerProducts tr:nth-child(even) {
+  background: #A4EEEC;
+}
+table.containerProducts thead {
+  background: -moz-linear-gradient(to bottom, #222930 0%, #A4EEEC 100%);
+  background: -webkit-linear-gradient(to bottom, #222930 0%, #A4EEEC 100%);
+  background: linear-gradient(to top, #222930 0%, #A4EEEC 100%);
+  border-bottom: 2px solid #444444;
+}
+h3 {
+  font-family: "times new roman";
+  font-size: 22px;
+  color: #222930;
+}
+table.containerProducts thead th {
+  font-family: "times new roman";
+  color: #222930;
+  border-left: 2px solid #D0E4F5;
+  font: caption;
+}
+button, a {
+  font-family: 'times new roman';
+  color: #E9E9E9 !important;
+  font-size: 14px;
+  text-shadow: 0px 0px 0px #7CACDE;
+  box-shadow: 1px 1px 1px #BEE2F9;
+  padding: 3px 8px;
+  border-radius: 100px;
+  border: 2px solid #3866A3;
+  background: #222930;
+  background: linear-gradient(to top, #222930 0%, #A4EEEC 100%);
+}
+
+
+

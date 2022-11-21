@@ -18,18 +18,18 @@ public class ServiceCart {
 
     public void delProduct(Product product, Integer count) {
         if (count == 0) {
-            logger.info("Count of %s to work is 0, nothing to do \n", product.getTitle());
+            logger.info("Count of {} to work is 0, nothing to do \n", product.getTitle());
             return;
         }
         if (cartRepository.isContainKey(product)) {
             if (cartRepository.getCountProducts(product).compareTo(count) > 0) {
                 cartRepository.updateProduct(product, count);
             } else if (cartRepository.getCountProducts(product).compareTo(count) == 0) {
-                logger.info("There are no more products of %s \n", product.getTitle());
+                logger.info("There are no more products of {} \n", product.getTitle());
                 cartRepository.deleteProduct(product);
             } else {
                 logger.info("we cant delete more than we have");
-                logger.info("products of %s will be removed \n", product.getTitle());
+                logger.info("products of {} will be removed \n", product.getTitle());
                 cartRepository.deleteProduct(product);
             }
         }
@@ -41,9 +41,6 @@ public class ServiceCart {
         }
     }
 
-//    public int getCartSize() {
-//        return cart.size();
-//    }
 
     public Map<Product, Integer> getCart() {
         return cartRepository.getCart();
