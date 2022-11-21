@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="did get/display value">
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="some css styling">
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/shop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/data/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/data/Product.java" afterDir="false" />
@@ -153,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669016152747</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some css styling">
+      <created>1669026479878</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669026479878</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +177,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="moving to angularjs + change scheme to repository-service-controller" />
     <MESSAGE value="did get/display value" />
-    <option name="LAST_COMMIT_MESSAGE" value="did get/display value" />
+    <MESSAGE value="some css styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="some css styling" />
   </component>
 </project>
