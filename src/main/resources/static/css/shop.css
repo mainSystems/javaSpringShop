@@ -34,7 +34,7 @@ button, a {
   box-shadow: 1px 1px 1px #BEE2F9;
   padding: 3px 8px;
   border-radius: 100px;
-  border: 2px solid #3866A3;
+  border: 3px solid #3866A3;
   background: #222930;
   background: linear-gradient(to top, #222930 0%, #A4EEEC 100%);
 }
