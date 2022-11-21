@@ -1,7 +1,7 @@
 angular.module('appShop', []).controller('indexController', function($scope, $http) {
     const contextPath='http://localhost:8180/app/shop';
 
-$scope.map = new Map();
+    $scope.mapProductsCount = new Map();
 
     $scope.loadProducts = function() {
         $http.get(contextPath + '/mainPage')
@@ -39,11 +39,10 @@ $scope.map = new Map();
                     productId: productId
                 }
             }).then(function(response) {
-                console.log(response);
                 $scope.productCount = response.data;
+                $scope.mapProductsCount.set(productId,$scope.productCount);
                 console.log(productId);
-                $scope.map.set(productId,$scope.productCount);
-                console.log($scope.map);
+                console.log($scope.mapProductsCount);
             });
         }
 
