@@ -34,12 +34,13 @@
         </thead>
         <tbody>
         <tr ng-repeat="product in productList" data-ng-init="getProductCount(product.id)">
+
             <td>{{product.id}}</td>
             <td>{{product.title}}</td>
             <td>{{product.cost}}</td>
             <td>
                 <button class="btn btn-outline-info" ng-click="changeProductCount(product.id, -1)">-</button>
-                    <span>{{mapProductsCount.get(product.id)}}</span>
+                <span>{{mapProductsCount.get(product.id)}}</span>
                 <button class="btn btn-outline-info" ng-click="changeProductCount(product.id, 1)">+</button>
             </td>
             <td>

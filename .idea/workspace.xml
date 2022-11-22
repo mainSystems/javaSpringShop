@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="some css styling">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/list_cart.html" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="moving to angularjs + change scheme to repository-service-controller">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/configs/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/ShopWebApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/ShopWebApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/data/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/data/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +49,9 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "last_opened_file_path": "/home/dn/temp/javaSpringShop/src/main/resources/templates"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
@@ -58,6 +59,8 @@
       <recent name="C:\java\javaSpringShop\src\main\resources\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\java\javaSpringShop\src\main\resources\configs" />
+      <recent name="C:\java\javaSpringShop\src\main\resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -81,7 +84,7 @@
     </configuration>
     <configuration name="ShopWebApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.systems.ShopWebApp" />
-      <module name="JavaServlet" />
+      <module name="SpringShop" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.systems.repositories.*" />

@@ -16,6 +16,7 @@ angular.module('appShop', [])
         $http.get(contextPath + '/new_cart')
         .then(function (response){
             console.log(response);
+            $scope.loadProducts();
         });
     };
 
