@@ -21,11 +21,11 @@ public class ServiceProduct {
         return productRepository.getProducts();
     }
 
-    public Product getProductsId(int productId) {
+    public Product getProductsId(Long productId) {
         return productRepository.getProductsId(productId);
     }
 
-    public void changeProductCount(int productId, int productCount) {
+    public void changeProductCount(Long productId, int productCount) {
         String isDel = (productCount < 0) ? "del" : "add";
         switch (isDel) {
             case "add": {
@@ -50,7 +50,7 @@ public class ServiceProduct {
 
     }
 
-    public void addProductSubmit(int productId, int productCount) {
+    public void addProductSubmit(Long productId, int productCount) {
         if (productCount == 0) {
             logger.info("Nothing to add in to cart: " + cartService);
             return;

@@ -58,7 +58,7 @@ public class ShopController {
     public String addProductSubmit(HttpServletRequest request, @ModelAttribute CountProducts countProducts, Model
             model) {
         String referer = request.getHeader("Referer");
-        int productId = countProducts.getId();
+        Long productId = countProducts.getId();
         int productCount = countProducts.getCount();
 
         productService.addProductSubmit(productId, productCount);
@@ -67,13 +67,13 @@ public class ShopController {
 
     @GetMapping("/changeProductCount")
     @ResponseBody
-    public void changeProductCount(@RequestParam int productId, @RequestParam int productCount) {
+    public void changeProductCount(@RequestParam Long productId, @RequestParam int productCount) {
         productService.changeProductCount(productId, productCount);
     }
 
     @GetMapping("/getProductCount")
     @ResponseBody
-    public Integer getProductCount(@RequestParam int productId) {
+    public Integer getProductCount(@RequestParam Long productId) {
         Product product = productService.getProductsId(productId);
         return cartService.getCartProductCount(product);
     }
