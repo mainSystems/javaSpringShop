@@ -16,6 +16,7 @@ public class HibernateUtils {
                 .buildSessionFactory();
     }
 
+//    @Bean(name="shutdown")
     public void shutdown() {
         if (factory != null) {
             factory.close();

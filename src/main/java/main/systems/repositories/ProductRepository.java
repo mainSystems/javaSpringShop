@@ -25,15 +25,9 @@ public class ProductRepository implements ProductRepositoryDao {
         this.hibernateUtils = hibernateUtils;
     }
 
-//    {
-//        for (int i = 0; i < countInitProducts; i++) {
-//            products.add(new Product((long) i, "Product_" + i, Math.floor(Math.random() * (maxPrice - minPrice + 1) + minPrice)));
-//        }
-//    }
-
     @Override
     public Product getProductsId(Long id) {
-        try(Session session = hibernateUtils.getFactory()) {
+        try (Session session = hibernateUtils.getFactory()) {
             session.beginTransaction();
             Product product = session.get(Product.class, id);
             session.getTransaction().commit();
@@ -47,7 +41,7 @@ public class ProductRepository implements ProductRepositoryDao {
 
     @Override
     public List<Product> getProducts() {
-        try(Session session = hibernateUtils.getFactory()) {
+        try (Session session = hibernateUtils.getFactory()) {
             session.beginTransaction();
             products = session.createQuery("select products from Product products").getResultList();
             session.getTransaction().commit();
