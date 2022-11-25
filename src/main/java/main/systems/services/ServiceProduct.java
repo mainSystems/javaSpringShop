@@ -1,7 +1,7 @@
 package main.systems.services;
 
 import main.systems.data.Product;
-import main.systems.repositories.ProductRepository;
+import main.systems.data.ProductRepositoryDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,17 +12,17 @@ import java.util.List;
 @Component
 public class ServiceProduct {
     @Autowired
-    ProductRepository productRepository;
+    ProductRepositoryDao productRepositoryDao;
     @Autowired
     private ServiceCart cartService;
     private static final Logger logger = LogManager.getLogger(ServiceProduct.class);
 
     public List<Product> getProducts() {
-        return productRepository.getProducts();
+        return productRepositoryDao.getProducts();
     }
 
     public Product getProductsId(Long productId) {
-        return productRepository.getProductsId(productId);
+        return productRepositoryDao.getProductsId(productId);
     }
 
     public void changeProductCount(Long productId, int productCount) {
@@ -30,7 +30,7 @@ public class ServiceProduct {
         switch (isDel) {
             case "add": {
                 if (cartService != null) {
-                    Product product = productRepository.getProductsId(productId);
+                    Product product = productRepositoryDao.getProductsId(productId);
                     cartService.addProducts(product, productCount);
                 } else {
                     logger.info("Create cart first");
@@ -39,7 +39,7 @@ public class ServiceProduct {
             }
             case "del": {
                 if (cartService != null) {
-                    Product product = productRepository.getProductsId(productId);
+                    Product product = productRepositoryDao.getProductsId(productId);
                     cartService.delProduct(product, productCount * -1);
                 } else {
                     logger.info("Create cart first");
@@ -60,7 +60,7 @@ public class ServiceProduct {
         switch (isDel) {
             case "add": {
                 if (cartService != null) {
-                    Product product = productRepository.getProductsId(productId);
+                    Product product = productRepositoryDao.getProductsId(productId);
                     cartService.addProducts(product, productCount);
                 } else {
                     logger.info("Create cart first");
@@ -69,7 +69,7 @@ public class ServiceProduct {
             }
             case "del": {
                 if (cartService != null) {
-                    Product product = productRepository.getProductsId(productId);
+                    Product product = productRepositoryDao.getProductsId(productId);
                     cartService.delProduct(product, productCount * -1);
                 } else {
                     logger.info("Create cart first");
