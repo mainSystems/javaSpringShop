@@ -2,8 +2,7 @@ package main.systems.controllers;
 
 import main.systems.services.ServiceCart;
 import main.systems.data.CountProducts;
-import main.systems.data.Product;
-import main.systems.repositories.ProductRepository;
+import main.systems.entity.Product;
 import main.systems.services.ServiceProduct;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

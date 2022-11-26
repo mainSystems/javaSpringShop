@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="some small addings">
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="small tun">
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/data/CustomerRepositoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/data/OrderRepositoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/data/HibernateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/data/HibernateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/data/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/data/ProductRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/data/ProductRepositoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CartRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/configs/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configs/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -186,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669228826480</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="small tun">
+      <created>1669404112959</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669404112959</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +221,7 @@
     <MESSAGE value="did get/display value" />
     <MESSAGE value="some css styling" />
     <MESSAGE value="some small addings" />
-    <option name="LAST_COMMIT_MESSAGE" value="some small addings" />
+    <MESSAGE value="small tun" />
+    <option name="LAST_COMMIT_MESSAGE" value="small tun" />
   </component>
 </project>

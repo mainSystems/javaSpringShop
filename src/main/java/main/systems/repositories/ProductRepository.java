@@ -2,7 +2,7 @@ package main.systems.repositories;
 
 
 import main.systems.data.HibernateUtils;
-import main.systems.data.Product;
+import main.systems.entity.Product;
 import main.systems.data.ProductRepositoryDao;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ public class ProductRepository implements ProductRepositoryDao {
     }
 
     @Override
-    public Product getProductsId(Long id) {
+    public Product getProductsById(Long id) {
         try (Session session = hibernateUtils.getFactory()) {
             session.beginTransaction();
             Product product = session.get(Product.class, id);

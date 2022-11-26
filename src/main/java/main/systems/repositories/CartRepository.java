@@ -1,6 +1,6 @@
 package main.systems.repositories;
 
-import main.systems.data.Product;
+import main.systems.entity.Product;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 

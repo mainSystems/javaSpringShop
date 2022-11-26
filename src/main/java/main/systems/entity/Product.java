@@ -1,4 +1,4 @@
-package main.systems.data;
+package main.systems.entity;
 
 import lombok.Data;
 
@@ -11,7 +11,7 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private  Long id;
+    private Long id;
     @Column(name = "title")
     private String title;
     @Column(name = "cost")
@@ -26,16 +26,4 @@ public class Product {
     public Product() {
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", cost=" + cost +
-                '}';
-    }
 }

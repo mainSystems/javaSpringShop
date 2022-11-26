@@ -1,6 +1,6 @@
 package main.systems.services;
 
-import main.systems.data.Product;
+import main.systems.entity.Product;
 import main.systems.data.ProductRepositoryDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,7 +22,7 @@ public class ServiceProduct {
     }
 
     public Product getProductsId(Long productId) {
-        return productRepositoryDao.getProductsId(productId);
+        return productRepositoryDao.getProductsById(productId);
     }
 
     public void changeProductCount(Long productId, int productCount) {
@@ -30,7 +30,7 @@ public class ServiceProduct {
         switch (isDel) {
             case "add": {
                 if (cartService != null) {
-                    Product product = productRepositoryDao.getProductsId(productId);
+                    Product product = productRepositoryDao.getProductsById(productId);
                     cartService.addProducts(product, productCount);
                 } else {
                     logger.info("Create cart first");
@@ -39,7 +39,7 @@ public class ServiceProduct {
             }
             case "del": {
                 if (cartService != null) {
-                    Product product = productRepositoryDao.getProductsId(productId);
+                    Product product = productRepositoryDao.getProductsById(productId);
                     cartService.delProduct(product, productCount * -1);
                 } else {
                     logger.info("Create cart first");
@@ -60,7 +60,7 @@ public class ServiceProduct {
         switch (isDel) {
             case "add": {
                 if (cartService != null) {
-                    Product product = productRepositoryDao.getProductsId(productId);
+                    Product product = productRepositoryDao.getProductsById(productId);
                     cartService.addProducts(product, productCount);
                 } else {
                     logger.info("Create cart first");
@@ -69,7 +69,7 @@ public class ServiceProduct {
             }
             case "del": {
                 if (cartService != null) {
-                    Product product = productRepositoryDao.getProductsId(productId);
+                    Product product = productRepositoryDao.getProductsById(productId);
                     cartService.delProduct(product, productCount * -1);
                 } else {
                     logger.info("Create cart first");
