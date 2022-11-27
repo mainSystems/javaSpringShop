@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="small tun">
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/data/CustomerRepositoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/data/OrderRepositoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Order.java" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="middle hib2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/TestingHibernate2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CustomerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/data/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/data/ProductRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/data/ProductRepositoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CartRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/configs/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configs/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -76,7 +74,7 @@
       <recent name="main.systems.SpringShop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShopWebApp">
+  <component name="RunManager" selected="Application.TestingHibernate2">
     <configuration name="Shop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.systems.SpringShop.Shop" />
       <module name="SpringShop" />
@@ -129,8 +127,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestingHibernate2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.systems.TestingHibernate2" />
+      <module name="SpringShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.systems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestingHibernate2" />
         <item itemvalue="Application.ShopWebApp" />
         <item itemvalue="Application.SpringShopApplication" />
         <item itemvalue="Application.Shop" />
@@ -202,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669404112959</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="middle hib2">
+      <created>1669502015254</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669502015254</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +241,7 @@
     <MESSAGE value="some css styling" />
     <MESSAGE value="some small addings" />
     <MESSAGE value="small tun" />
-    <option name="LAST_COMMIT_MESSAGE" value="small tun" />
+    <MESSAGE value="middle hib2" />
+    <option name="LAST_COMMIT_MESSAGE" value="middle hib2" />
   </component>
 </project>

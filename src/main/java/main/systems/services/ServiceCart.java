@@ -23,14 +23,14 @@ public class ServiceCart {
         }
         if (cartRepository.isContainKey(product)) {
             if (cartRepository.getCountProducts(product).compareTo(count) > 0) {
-                cartRepository.updateProduct(product, count);
+                cartRepository.deleteProduct(product, count);
             } else if (cartRepository.getCountProducts(product).compareTo(count) == 0) {
                 logger.info("There are no more products of {} \n", product.getTitle());
-                cartRepository.deleteProduct(product);
+                cartRepository.purgeProduct(product);
             } else {
                 logger.info("we cant delete more than we have");
                 logger.info("products of {} will be removed \n", product.getTitle());
-                cartRepository.deleteProduct(product);
+                cartRepository.purgeProduct(product);
             }
         }
     }

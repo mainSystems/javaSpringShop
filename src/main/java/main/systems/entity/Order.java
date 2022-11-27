@@ -1,10 +1,12 @@
 package main.systems.entity;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Data
+@NoArgsConstructor
 @Entity
 @Table(name = "orders")
 public class Order {
@@ -23,5 +25,10 @@ public class Order {
     @Column(name = "quantity")
     private Integer quantity;
 
-    public Order () {}
+    @ManyToOne
+    @JoinColumn(name = "customer_id")
+    Customer customersOrder;
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    Product products;
 }

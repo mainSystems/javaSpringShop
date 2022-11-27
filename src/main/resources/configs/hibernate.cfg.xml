@@ -15,5 +15,7 @@
         <!--        <property name="hbm2ddl.auto">create</property>-->
 
         <mapping class="main.systems.entity.Product"/>
+        <mapping class="main.systems.entity.Customer"/>
+        <mapping class="main.systems.entity.Order"/>
     </session-factory>
 </hibernate-configuration>

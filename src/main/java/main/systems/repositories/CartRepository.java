@@ -24,11 +24,11 @@ public class CartRepository {
         return cart.get(product);
     }
 
-    public void updateProduct(Product product, Integer count) {
+    public void deleteProduct(Product product, Integer count) {
         cart.put(product, cart.get(product) - count);
     }
 
-    public void deleteProduct(Product product) {
+    public void purgeProduct(Product product) {
         cart.remove(product);
     }
 

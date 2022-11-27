@@ -21,10 +21,10 @@ public class ProductRepository implements ProductRepositoryDao {
     }
 
     @Override
-    public Product getProductsById(Long id) {
+    public Product getProductsById(Long product_id) {
         try (Session session = hibernateUtils.getFactory()) {
             session.beginTransaction();
-            Product product = session.get(Product.class, id);
+            Product product = session.get(Product.class, product_id);
             session.getTransaction().commit();
             return product;
         }
