@@ -5,19 +5,15 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Data
-@NoArgsConstructor
 @Entity
+//@Data
+//@NoArgsConstructor
 @Table(name = "orders")
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @Column(name = "product_id")
-    private Long product_id;
-    @Column(name = "customer_id")
-    private Long customer_id;
     @Column(name = "date")
     private String date;
     @Column(name = "cost")
@@ -27,8 +23,51 @@ public class Order {
 
     @ManyToOne
     @JoinColumn(name = "customer_id")
-    Customer customersOrder;
+    private Customer customersOrder;
     @ManyToOne
     @JoinColumn(name = "product_id")
     Product products;
+
+    public Order() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public Customer getCustomersOrder() {
+        return customersOrder;
+    }
+
+    public void setCustomersOrder(Customer customersOrder) {
+        this.customersOrder = customersOrder;
+    }
 }

@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Data
-@NoArgsConstructor
+//@Data
+//@NoArgsConstructor
 @Table(name = "customers")
 public class Customer {
     @Id
@@ -21,6 +21,41 @@ public class Customer {
 
 
     @OneToMany(mappedBy = "customersOrder", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-//    List<Order> orders;
-    private List <Order> orders = new ArrayList<>();
+    private List<Order> orders;
+
+    public Customer() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", orders_count=" + orders.size() +
+                '}';
+    }
 }

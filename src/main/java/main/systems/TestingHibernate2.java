@@ -17,17 +17,23 @@ public class TestingHibernate2 {
                 .buildSessionFactory();
 
 
-        try (Session session = factory.getCurrentSession()) {
+        Session session = null;
+        try {
+            session = factory.getCurrentSession();
             session.beginTransaction();
-//            Product product = session.get(Product.class, 1L);
-//            Customer customerTest = session.get(Customer.class, 1L);
+            Product product = session.get(Product.class, 1L);
+            Customer customers = session.get(Customer.class, 1L);
             System.out.println("1==================================================================================================================");
-//            System.out.println("customer = " + customerTest);
-//            System.out.println("product = " + product);
+            System.out.println("customer = " + customers);
+            System.out.println("product = " + product);
             System.out.println("2==================================================================================================================");
             session.getTransaction().commit();
+        } finally {
+            factory.close();
+            if (session != null) {
+                session.close();
+            }
         }
-        factory.close();
     }
 
 }
