@@ -1,5 +1,6 @@
 package main.systems.controllers;
 
+import main.systems.entity.Order;
 import main.systems.services.ServiceCart;
 import main.systems.data.CountProducts;
 import main.systems.entity.Product;
@@ -35,14 +36,14 @@ public class ShopController {
     @GetMapping("/new_cart")
     @ResponseBody
     private void new_cart() {
-        cartService.createNewCart();
+//        cartService.createNewCart();
         logger.info("New cart created: " + cartService);
     }
 
 
     @GetMapping("/list_cart")
     @ResponseBody
-    private Map<Product, Integer> list_cart() {
+    private List<Order> list_cart() {
         return cartService.getCart();
     }
 

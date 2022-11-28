@@ -1,5 +1,6 @@
 package main.systems.services;
 
+import main.systems.entity.Order;
 import main.systems.entity.Product;
 import main.systems.repositories.CartRepository;
 import org.apache.logging.log4j.LogManager;
@@ -7,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
 import java.util.Map;
 
 @Component
@@ -42,20 +44,15 @@ public class ServiceCart {
     }
 
 
-    public Map<Product, Integer> getCart() {
+    public List<Order> getCart() {
         return cartRepository.getCart();
     }
 
-    public void createNewCart() {
-        cartRepository = new CartRepository();
-    }
+//    public void createNewCart() {
+//        cartRepository = new CartRepository();
+//    }
 
     public Integer getCartProductCount(Product product) {
-        Integer productCount = cartRepository.getCountProducts(product);
-        if (productCount != null) {
-            return productCount;
-        } else {
-            return 0;
-        }
+        return cartRepository.getCountProducts(product);
     }
 }

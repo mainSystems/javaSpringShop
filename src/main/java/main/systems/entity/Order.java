@@ -1,8 +1,5 @@
 package main.systems.entity;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 
 @Entity
@@ -26,7 +23,7 @@ public class Order {
     private Customer customersOrder;
     @ManyToOne
     @JoinColumn(name = "product_id")
-    Product products;
+    Product productsOrder;
 
     public Order() {
     }
@@ -69,5 +66,25 @@ public class Order {
 
     public void setCustomersOrder(Customer customersOrder) {
         this.customersOrder = customersOrder;
+    }
+
+    public Product getProductsOrder() {
+        return productsOrder;
+    }
+
+    public void setProductsOrder(Product productsOrder) {
+        this.productsOrder = productsOrder;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", date='" + date + '\'' +
+                ", cost=" + cost +
+                ", quantity=" + quantity +
+                ", customersOrder=" + customersOrder +
+                ", products=" + productsOrder +
+                '}';
     }
 }

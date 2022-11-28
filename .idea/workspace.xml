@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="hib2 - working now" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="hib2 - working now">
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/data/CartRepositoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pg-Dump-shop" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pg-Dump-shop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -78,7 +88,7 @@
       <recent name="main.systems.SpringShop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestingHibernate2">
+  <component name="RunManager" selected="Application.ShopWebApp">
     <configuration name="Shop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.systems.SpringShop.Shop" />
       <module name="SpringShop" />
@@ -94,7 +104,7 @@
     </configuration>
     <configuration name="ShopWebApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.systems.ShopWebApp" />
-      <module name="SpringShop" />
+      <module name="JavaServlet" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.systems.repositories.*" />
@@ -146,8 +156,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestingHibernate2" />
         <item itemvalue="Application.ShopWebApp" />
+        <item itemvalue="Application.TestingHibernate2" />
         <item itemvalue="Application.SpringShopApplication" />
         <item itemvalue="Application.Shop" />
       </list>

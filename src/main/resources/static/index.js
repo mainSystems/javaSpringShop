@@ -43,7 +43,7 @@ angular.module('appShop', [])
             }).then(function(response) {
                 $scope.productCount = response.data;
                 $scope.mapProductsCount.set(productId,$scope.productCount);
-                console.log(productId);
+//                console.log(productId);
                 console.log($scope.mapProductsCount);
             });
         }

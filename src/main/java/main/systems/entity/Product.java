@@ -20,7 +20,8 @@ public class Product {
     @Column(name = "cost")
     private double cost;
 
-    @OneToMany(mappedBy = "products", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "productsOrder", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+//    @OneToMany(mappedBy = "products", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Order> orders;
 
     public Product(Long id, String title, double cost) {
@@ -62,7 +63,6 @@ public class Product {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", cost=" + cost +
-                ", orders_count=" + orders.size() +
                 '}';
     }
 }
