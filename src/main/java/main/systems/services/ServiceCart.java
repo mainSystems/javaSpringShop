@@ -3,6 +3,7 @@ package main.systems.services;
 import main.systems.entity.Order;
 import main.systems.entity.Product;
 import main.systems.repositories.CartRepository;
+import main.systems.repositories.ProductRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,8 @@ import java.util.Map;
 @Component
 public class ServiceCart {
     @Autowired
+    ProductRepository productRepository;
+    @Autowired
     CartRepository cartRepository;
     private static final Logger logger = LogManager.getLogger(ServiceCart.class);
 
@@ -23,17 +26,15 @@ public class ServiceCart {
             logger.info("Count of {} to work is 0, nothing to do \n", product.getTitle());
             return;
         }
-        if (cartRepository.isContainKey(product)) {
-            if (cartRepository.getCountProducts(product).compareTo(count) > 0) {
-                cartRepository.deleteProduct(product, count);
-            } else if (cartRepository.getCountProducts(product).compareTo(count) == 0) {
-                logger.info("There are no more products of {} \n", product.getTitle());
-                cartRepository.purgeProduct(product);
-            } else {
-                logger.info("we cant delete more than we have");
-                logger.info("products of {} will be removed \n", product.getTitle());
-                cartRepository.purgeProduct(product);
-            }
+        if (cartRepository.getCountProducts(product) > 0) {
+            cartRepository.deleteProduct(product, count);
+        } else if (cartRepository.getCountProducts(product) == 0) {
+            logger.info("There are no more products of {} \n", product.getTitle());
+            cartRepository.purgeProduct(product);
+        } else {
+            logger.info("we cant delete more than we have");
+            logger.info("products of {} will be removed \n", product.getTitle());
+            cartRepository.purgeProduct(product);
         }
     }
 
@@ -48,11 +49,16 @@ public class ServiceCart {
         return cartRepository.getCart();
     }
 
-//    public void createNewCart() {
-//        cartRepository = new CartRepository();
-//    }
+    public void createNewCart() {
+        cartRepository.purgeAllProduct();
+    }
 
-    public Integer getCartProductCount(Product product) {
+    public void purgeProductById(Long productId) {
+        Product product = productRepository.getProductsById(productId);
+        cartRepository.purgeProduct(product);
+    }
+
+    public long getCartProductCount(Product product) {
         return cartRepository.getCountProducts(product);
     }
 }

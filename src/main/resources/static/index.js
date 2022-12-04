@@ -33,6 +33,18 @@ angular.module('appShop', [])
         });
     }
 
+    $scope.purgeProduct = function(productId) {
+            $http({
+                url: contextPath + '/purgeProduct',
+                method: 'POST',
+                params: {
+                    productId: productId
+                }
+            }).then(function(response) {
+                $scope.loadProducts();
+            });
+        }
+
     $scope.getProductCount = function(productId) {
             $http({
                 url: contextPath + '/getProductCount',

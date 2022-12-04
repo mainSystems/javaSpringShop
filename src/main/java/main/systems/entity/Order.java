@@ -1,10 +1,14 @@
 package main.systems.entity;
 
+import org.hibernate.annotations.DynamicUpdate;
+
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 //@Data
 //@NoArgsConstructor
+@DynamicUpdate
 @Table(name = "orders")
 public class Order {
     @Id
@@ -12,7 +16,7 @@ public class Order {
     @Column(name = "id")
     private Long id;
     @Column(name = "date")
-    private String date;
+    private Date date;
     @Column(name = "cost")
     private double cost;
     @Column(name = "quantity")
@@ -36,11 +40,11 @@ public class Order {
         this.id = id;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
@@ -83,8 +87,8 @@ public class Order {
                 ", date='" + date + '\'' +
                 ", cost=" + cost +
                 ", quantity=" + quantity +
-                ", customersOrder=" + customersOrder +
-                ", products=" + productsOrder +
+//                ", customersOrder=" + customersOrder +
+//                ", products=" + productsOrder +
                 '}';
     }
 }

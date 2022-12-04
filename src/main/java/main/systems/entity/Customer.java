@@ -2,6 +2,8 @@ package main.systems.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -10,6 +12,8 @@ import java.util.List;
 @Entity
 //@Data
 //@NoArgsConstructor
+@DynamicInsert
+@DynamicUpdate
 @Table(name = "customers")
 public class Customer {
     @Id
@@ -42,20 +46,20 @@ public class Customer {
         this.title = title;
     }
 
-    public List<Order> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(List<Order> orders) {
-        this.orders = orders;
-    }
+//    public List<Order> getOrders() {
+//        return orders;
+//    }
+//
+//    public void setOrders(List<Order> orders) {
+//        this.orders = orders;
+//    }
 
     @Override
     public String toString() {
         return "Customer{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", orders_count=" + orders.size() +
+//                ", orders_count=" + orders.size() +
                 '}';
     }
 }

@@ -1,5 +1,6 @@
 package main.systems.controllers;
 
+//import jakarta.servlet.http.HttpServletRequest;
 import main.systems.entity.Order;
 import main.systems.services.ServiceCart;
 import main.systems.data.CountProducts;
@@ -36,7 +37,7 @@ public class ShopController {
     @GetMapping("/new_cart")
     @ResponseBody
     private void new_cart() {
-//        cartService.createNewCart();
+        cartService.createNewCart();
         logger.info("New cart created: " + cartService);
     }
 
@@ -71,9 +72,15 @@ public class ShopController {
         productService.changeProductCount(productId, productCount);
     }
 
+    @PostMapping("/purgeProduct")
+    @ResponseBody
+    public void purgeProduct(@RequestParam Long productId) {
+        cartService.purgeProductById(productId);
+    }
+
     @GetMapping("/getProductCount")
     @ResponseBody
-    public Integer getProductCount(@RequestParam Long productId) {
+    public long getProductCount(@RequestParam Long productId) {
         Product product = productService.getProductsId(productId);
         return cartService.getCartProductCount(product);
     }

@@ -2,6 +2,8 @@ package main.systems.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.util.List;
@@ -9,6 +11,8 @@ import java.util.List;
 @Entity
 //@Data
 //@NoArgsConstructor
+@DynamicInsert
+@DynamicUpdate
 @Table(name = "products")
 public class Product {
     @Id
@@ -24,11 +28,11 @@ public class Product {
 //    @OneToMany(mappedBy = "products", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Order> orders;
 
-    public Product(Long id, String title, double cost) {
-        this.id = id;
-        this.title = title;
-        this.cost = cost;
-    }
+//    public Product(Long id, String title, double cost) {
+//        this.id = id;
+//        this.title = title;
+//        this.cost = cost;
+//    }
 
     public Product() {
     }
