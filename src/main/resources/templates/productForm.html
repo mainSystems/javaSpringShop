@@ -3,10 +3,11 @@
 <head>
     <title>Add/Del Product Form</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/shop.css"/>
 </head>
 <body>
 <h1>Add/Del Product Form</h1>
-<form action="#" th:action="@{/shop/addProduct}" th:object="${countProducts}" method="post">
+<form action="#" th:action="@{/api/v1/shop/products}" th:object="${countProducts}" method="post">
     <p>Product ID:
     <span th:text="${idProduct}"></span>
     <select hidden th:field="*{id}">

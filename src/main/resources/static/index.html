@@ -18,7 +18,7 @@
 
     <div>
         <button class="btn btn-primary btn-sm mb-3" ng-click="newCart()">Create New cart</button>
-        <a href="shop/list_cart" class="btn btn-primary btn-sm mb-3" target="_blank">List Cart</a>
+        <a href="api/v1/shop/list_cart" class="btn btn-primary btn-sm mb-3" target="_blank">List Cart</a>
     </div>
 
 
@@ -44,7 +44,7 @@
                 <button class="btn btn-outline-info" ng-click="changeProductCount(product.id, 1)">+</button>
             </td>
             <td>
-                <a href="shop/addProduct?idProduct={{product.id}}"
+                <a href="api/v1/shop/products?idProduct={{product.id}}"
                    class="btn btn-outline-success">Add/Delete custom count</a>
                 <button class="btn btn-outline-info" ng-click="purgeProduct(product.id)">Delete</button>
             </td>

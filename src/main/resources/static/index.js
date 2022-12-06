@@ -1,6 +1,6 @@
 angular.module('appShop', [])
     .controller('indexController', function($scope, $http) {
-    const contextPath='http://localhost:8180/app/shop';
+    const contextPath='http://localhost:8180/app/api/v1/shop';
 
     $scope.mapProductsCount = new Map();
 
@@ -22,8 +22,8 @@ angular.module('appShop', [])
 
     $scope.changeProductCount = function(productId, productCount) {
         $http({
-            url: contextPath + '/changeProductCount',
-            method: 'GET',
+            url: contextPath + '/productsCount',
+            method: 'POST',
             params: {
                 productId: productId,
                 productCount: productCount
@@ -35,8 +35,8 @@ angular.module('appShop', [])
 
     $scope.purgeProduct = function(productId) {
             $http({
-                url: contextPath + '/purgeProduct',
-                method: 'POST',
+                url: contextPath + '/products',
+                method: 'DELETE',
                 params: {
                     productId: productId
                 }
@@ -47,7 +47,7 @@ angular.module('appShop', [])
 
     $scope.getProductCount = function(productId) {
             $http({
-                url: contextPath + '/getProductCount',
+                url: contextPath + '/productsCount',
                 method: 'GET',
                 params: {
                     productId: productId

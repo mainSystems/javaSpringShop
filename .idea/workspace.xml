@@ -4,32 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="hib2 - working now">
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CartRepositoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CustomerRepositoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/ProductRepositoryDao.java" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="allDone - lesson8">
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/dto/ProductDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/TestingHibernate2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/data/CartRepositoryDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/data/CustomerRepositoryDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/data/HibernateUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/data/OrderRepositoryDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/data/ProductRepositoryDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CartRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/configs/hibernate.cfg.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/productForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/productForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -273,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669587350259</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="allDone - lesson8">
+      <created>1670177857603</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670177857603</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -305,6 +295,7 @@
     <MESSAGE value="middle hib2 - not working" />
     <MESSAGE value="middle hib2 - not working add Dump base" />
     <MESSAGE value="hib2 - working now" />
-    <option name="LAST_COMMIT_MESSAGE" value="hib2 - working now" />
+    <MESSAGE value="allDone - lesson8" />
+    <option name="LAST_COMMIT_MESSAGE" value="allDone - lesson8" />
   </component>
 </project>

@@ -25,7 +25,6 @@ public class Product {
     private double cost;
 
     @OneToMany(mappedBy = "productsOrder", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-//    @OneToMany(mappedBy = "products", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Order> orders;
 
 //    public Product(Long id, String title, double cost) {
