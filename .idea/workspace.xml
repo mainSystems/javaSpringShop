@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="some css styling">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="some css styling v2">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/background2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/background3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/background1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/productForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/productForm.html" afterDir="false" />
     </list>
@@ -69,13 +72,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/dn/temp/javaSpringShop/src/main/resources/static/pic",
+    "last_opened_file_path": "/home/dn/temp/javaSpringShop/src/main/resources/static/img",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "settings.editor.splitter.proportion": "0.2562432"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/pic" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
@@ -273,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670414710611</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="some css styling v2">
+      <created>1670415976531</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670415976531</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -306,6 +317,7 @@
     <MESSAGE value="hib2 - working now" />
     <MESSAGE value="allDone - lesson8" />
     <MESSAGE value="some css styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="some css styling" />
+    <MESSAGE value="some css styling v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="some css styling v2" />
   </component>
 </project>

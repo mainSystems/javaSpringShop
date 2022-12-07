@@ -1,33 +1,45 @@
+body {
+  background-image: url('http://localhost:8180/app/img/background1.jpg'),
+  url('http://localhost:8180/app/img/background2.jpg'),
+  url('http://localhost:8180/app/img/background3.jpg');
+}
 table.containerProducts {
   font-family: "hack";
+  mix-blend-mode: luminosity;
   color: #1e2128 !important;
   border: 1px solid #1C6EA4;
   background-color: #77808f;
-  width: 60%;
+  width: 55%;
   text-align: center;
   border-collapse: collapse;
 }
+
 table.containerProducts tr:nth-child(even) {
   background: #aac7e3;
 }
+
 table.containerProducts thead {
   background: -moz-linear-gradient(to bottom, #aac7e3 0%, #d8eded 100%);
   background: -webkit-linear-gradient(to bottom, #aac7e3 0%, #d8eded 100%);
   background: linear-gradient(to top, #aac7e3 0%, #d8eded 100%);
   border-bottom: 2px solid #444444;
 }
+
 p, h3 {
   font-family: "hack";
-/*  mix-blend-mode: overlay; */
+  mix-blend-mode: luminosity;
   font-size: 22px;
   color: #A4EEEC;
 }
+
 table.containerProducts thead th {
   font-family: "hack";
+  mix-blend-mode: luminosity;
   color: #222930;
   border-left: 2px solid #D0E4F5;
   font: caption;
 }
+
 /* button, a {
   font-family: 'hack';
   color: #000000 !important;
@@ -40,7 +52,9 @@ table.containerProducts thead th {
   background: #222930;
   background: linear-gradient(to top, #040509 0%, #f5f5f3 100%);
 } */
+
 input, button, a {
+  mix-blend-mode: luminosity;
   align-items: center;
   appearance: none;
   background-clip: padding-box;

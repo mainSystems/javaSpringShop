@@ -6,11 +6,7 @@
     <link rel="stylesheet" type="text/css" href="http://localhost:8180/app/css/shop.css"/>
 </head>
 <body>
-<style>
-body {
-  background-image: url('http://localhost:8180/app/img/background.jpg');
-}
-</style>
+
 <h3>Add/Del Product Form</h3>
 <form action="#" th:action="@{/api/v1/shop/products}" th:object="${countProducts}" method="post">
     <p>Product ID:
