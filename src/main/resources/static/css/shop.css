@@ -16,7 +16,7 @@ table.containerProducts thead {
   background: linear-gradient(to top, #aac7e3 0%, #d8eded 100%);
   border-bottom: 2px solid #444444;
 }
-h3 {
+p, h3 {
   font-family: "hack";
 /*  mix-blend-mode: overlay; */
   font-size: 22px;
@@ -40,7 +40,7 @@ table.containerProducts thead th {
   background: #222930;
   background: linear-gradient(to top, #040509 0%, #f5f5f3 100%);
 } */
-button, a {
+input, button, a {
   align-items: center;
   appearance: none;
   background-clip: padding-box;

@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="hib2: problem with List&lt;Order&gt; &amp; not all methods refactor(New cart/purgeProduct/addProduct{new Product})">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/background.jpg" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="some css styling">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/shop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/productForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/productForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +65,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "/home/dn/temp/javaSpringShop/src/main/resources/static/pic",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "settings.editor.splitter.proportion": "0.2562432"
@@ -263,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670177857603</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="some css styling">
+      <created>1670414710611</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670414710611</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -288,7 +298,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="moving to angularjs + change scheme to repository-service-controller" />
     <MESSAGE value="did get/display value" />
-    <MESSAGE value="some css styling" />
     <MESSAGE value="some small addings" />
     <MESSAGE value="small tun" />
     <MESSAGE value="middle hib2" />
@@ -296,6 +305,7 @@
     <MESSAGE value="middle hib2 - not working add Dump base" />
     <MESSAGE value="hib2 - working now" />
     <MESSAGE value="allDone - lesson8" />
-    <option name="LAST_COMMIT_MESSAGE" value="allDone - lesson8" />
+    <MESSAGE value="some css styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="some css styling" />
   </component>
 </project>
