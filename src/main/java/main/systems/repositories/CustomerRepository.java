@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class CustomerRepository {
@@ -22,5 +23,9 @@ public class CustomerRepository {
 
     public List<Order> getOrders() {
         return null;
+    }
+
+    public Optional<Customer> getCustomerByUserName(String username) {
+        return customerRepositoryDao.findByUsername(username);
     }
 }

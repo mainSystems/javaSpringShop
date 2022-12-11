@@ -2,6 +2,8 @@ server:
   port: 8180
   servlet:
     context-path: /app
+    session:
+      timeout: 60s
 
 spring:
   jpa:

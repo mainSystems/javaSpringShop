@@ -7,6 +7,7 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 @Entity
@@ -23,6 +24,19 @@ public class Customer {
     @Column(name = "title")
     private String title;
 
+    @Column(name = "username")
+    private String username;
+
+    @Column(name = "password")
+    private String password;
+
+
+    @ManyToMany
+    @JoinTable( name = "users_roles",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id")
+    )
+    private Collection<Role> roles;
 
     @OneToMany(mappedBy = "customersOrder", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Order> orders;
@@ -46,7 +60,27 @@ public class Customer {
         this.title = title;
     }
 
-//    public List<Order> getOrders() {
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Collection<Role> getRoles() {
+        return roles;
+    }
+
+    //    public List<Order> getOrders() {
 //        return orders;
 //    }
 //
