@@ -27,13 +27,13 @@ public class Product {
     @OneToMany(mappedBy = "productsOrder", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Order> orders;
 
-//    public Product(Long id, String title, double cost) {
-//        this.id = id;
-//        this.title = title;
-//        this.cost = cost;
-//    }
-
     public Product() {
+    }
+
+    public Product(Long id, String title, double cost) {
+        this.id = id;
+        this.title = title;
+        this.cost = cost;
     }
 
     public Long getId() {

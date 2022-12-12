@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="commit before security">
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/converters/CustomerConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/dto/CustomerDto.java" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="&quot;Урок 11. Spring Security&quot; all done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/converters/ProductConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/configs/securityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/configs/securityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pg-Dump-shop" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pg-Dump-shop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/dto/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/entity/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670617298419</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="&quot;Урок 11. Spring Security&quot; all done">
+      <created>1670828630588</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1670828630588</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -330,7 +332,8 @@
     <MESSAGE value="some css styling" />
     <MESSAGE value="some css styling v2" />
     <MESSAGE value="commit before security" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit before security" />
+    <MESSAGE value="&quot;Урок 11. Spring Security&quot; all done" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Урок 11. Spring Security&quot; all done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
