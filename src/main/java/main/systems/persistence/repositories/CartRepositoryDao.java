@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface CartRepositoryDao extends JpaRepository<Order,Long> {
+public interface CartRepositoryDao extends JpaRepository<Order, Long> {
 
 //    @Query(value = "select o.id from Order o where o.product_id = :productId")
 //    Order findUniqOrderByProductId(Long productId);

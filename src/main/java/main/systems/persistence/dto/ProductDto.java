@@ -44,5 +44,6 @@ public class ProductDto {
         this.cost = cost;
     }
 
-    public ProductDto() {}
+    public ProductDto() {
+    }
 }

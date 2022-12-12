@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ShopWebApp {
     private static final Logger logger = LogManager.getLogger(ShopWebApp.class);
+
     public static void main(String[] args) {
         SpringApplication.run(ShopWebApp.class, args);
         logger.info("Starting app");

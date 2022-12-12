@@ -4,27 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="&quot;Урок 11. Spring Security&quot; added converters">
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="&quot;Урок 11. Spring Security&quot; reformat code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/ShopWebApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/ShopWebApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/configs/securityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/configs/securityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/converters/CustomerConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/converters/CustomerConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/converters/ProductConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/converters/ProductConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/dto/CustomerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/dto/ProductDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CartRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CartRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CartRepositoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/CustomerRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CustomerRepositoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/ProductRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/ProductRepositoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/repositories/RoleRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/RoleRepositoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/services/ServiceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/converters/CustomerConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/converters/CustomerConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/converters/ProductConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/converters/ProductConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/dto/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CartRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CartRepositoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/ProductRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/ProductRepositoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/RoleRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/RoleRepositoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670829523958</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="&quot;Урок 11. Spring Security&quot; arranged">
+      <created>1670829932038</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1670829932038</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -357,7 +358,8 @@
     <MESSAGE value="commit before security" />
     <MESSAGE value="&quot;Урок 11. Spring Security&quot; all done" />
     <MESSAGE value="&quot;Урок 11. Spring Security&quot; added converters" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Урок 11. Spring Security&quot; added converters" />
+    <MESSAGE value="&quot;Урок 11. Spring Security&quot; arranged" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Урок 11. Spring Security&quot; arranged" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -15,7 +15,6 @@ angular.module('appShop', [])
     $scope.newCart = function() {
         $http.get(contextPath + '/new_cart')
         .then(function (response){
-            console.log(response);
             $scope.loadProducts();
         });
     };
@@ -29,6 +28,7 @@ angular.module('appShop', [])
                 productCount: productCount
             }
         }).then(function(response) {
+            console.log(response);
             $scope.loadProducts();
         });
     }

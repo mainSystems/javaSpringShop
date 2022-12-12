@@ -41,7 +41,7 @@ public class ShopController {
     @GetMapping("/mainPage")
     @ResponseBody
     private List<ProductDto> getProducts() {
-       return productService.getProducts().stream().map(product -> new ProductDto(product)).toList();
+        return productService.getProducts().stream().map(product -> new ProductDto(product)).toList();
     }
 
     @GetMapping("/new_cart")
@@ -97,7 +97,7 @@ public class ShopController {
 
     @GetMapping("/admin/user_info")
     @ResponseBody
-    public List<CustomerDto> getAllCustomers(){
+    public List<CustomerDto> getAllCustomers() {
         return userService.getAllCustomer().stream().map(customer -> new CustomerDto(customer)).toList();
     }
 }

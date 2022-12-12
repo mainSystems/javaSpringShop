@@ -29,7 +29,7 @@ public class ServiceUser implements UserDetailsService {
     @Override
     @Transactional
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Customer customer = getCustomerByUserName(username).orElseThrow(() -> new UsernameNotFoundException(String.format("User '%s' not found",username)));
+        Customer customer = getCustomerByUserName(username).orElseThrow(() -> new UsernameNotFoundException(String.format("User '%s' not found", username)));
         return new org.springframework.security.core.userdetails.User(customer.getUsername(), customer.getPassword(), mapRolesToAuthorities(customer.getRoles()));
     }
 

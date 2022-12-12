@@ -26,12 +26,12 @@ public class CartRepository {
     }
 
     public boolean isOrderContainProductByKey(Product product) {
-        return (cartRepositoryDao.findCountOrdersByProductId(product.getId()) > 0)? true:false;
+        return (cartRepositoryDao.findCountOrdersByProductId(product.getId()) > 0) ? true : false;
     }
 
     public long getCountProducts(Product product) {
         if (isOrderContainProductByKey(product)) {
-           return cartRepositoryDao.findQuantityByProductId(product.getId());
+            return cartRepositoryDao.findQuantityByProductId(product.getId());
         } else {
             return 0;
         }
