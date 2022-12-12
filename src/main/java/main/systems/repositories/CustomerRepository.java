@@ -28,4 +28,8 @@ public class CustomerRepository {
     public Optional<Customer> getCustomerByUserName(String username) {
         return customerRepositoryDao.findByUsername(username);
     }
+
+    public List<Customer> getAllCustomers() {
+        return customerRepositoryDao.findAll();
+    }
 }

@@ -1,5 +1,6 @@
 package main.systems.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.DynamicInsert;
@@ -42,6 +43,14 @@ public class Customer {
     private List<Order> orders;
 
     public Customer() {
+    }
+
+    public Customer(Long id, String title, String username, String password, Collection<Role> roles) {
+        this.id = id;
+        this.title = title;
+        this.username = username;
+        this.password = password;
+        this.roles = roles;
     }
 
     public Long getId() {

@@ -1,12 +1,15 @@
 package main.systems.controllers;
 
 
+import main.systems.converters.CustomerConverter;
 import main.systems.data.CountProducts;
+import main.systems.dto.CustomerDto;
 import main.systems.dto.ProductDto;
 import main.systems.entity.Order;
 import main.systems.entity.Product;
 import main.systems.services.ServiceCart;
 import main.systems.services.ServiceProduct;
+import main.systems.services.ServiceUser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,17 +24,23 @@ import java.util.List;
 @RequestMapping("/api/v1/shop")
 public class ShopController {
     @Autowired
-//    private ProductRepository productRepository;
     private ServiceProduct productService;
     @Autowired
     private ServiceCart cartService;
+
+    @Autowired
+    private ServiceUser userService;
+
+    private CustomerConverter customerConverter;
     private static final Logger logger = LogManager.getLogger(ShopController.class);
+
+    public ShopController() {
+    }
 
 
     @GetMapping("/mainPage")
     @ResponseBody
     private List<ProductDto> getProducts() {
-//        return productService.getProducts();
        return productService.getProducts().stream().map(product -> new ProductDto(product)).toList();
     }
 
@@ -84,5 +93,11 @@ public class ShopController {
     public long getProductCount(@RequestParam Long productId) {
         Product product = productService.getProductsId(productId);
         return cartService.getCartProductCount(product);
+    }
+
+    @GetMapping("/admin/user_info")
+    @ResponseBody
+    public List<CustomerDto> getAllCustomers(){
+        return userService.getAllCustomer().stream().map(customer -> new CustomerDto(customer)).toList();
     }
 }
