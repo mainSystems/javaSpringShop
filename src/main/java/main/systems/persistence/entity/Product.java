@@ -1,7 +1,5 @@
-package main.systems.entity;
+package main.systems.persistence.entity;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 

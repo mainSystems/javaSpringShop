@@ -1,7 +1,7 @@
-package main.systems.dto;
+package main.systems.persistence.dto;
 
 
-import main.systems.entity.Product;
+import main.systems.persistence.entity.Product;
 
 public class ProductDto {
     private Long id;

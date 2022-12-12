@@ -1,7 +1,7 @@
-package main.systems.converters;
+package main.systems.persistence.converters;
 
-import main.systems.dto.ProductDto;
-import main.systems.entity.Product;
+import main.systems.persistence.dto.ProductDto;
+import main.systems.persistence.entity.Product;
 import org.springframework.stereotype.Component;
 
 @Component

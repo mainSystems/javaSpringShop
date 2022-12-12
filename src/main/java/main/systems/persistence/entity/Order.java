@@ -1,4 +1,4 @@
-package main.systems.entity;
+package main.systems.persistence.entity;
 
 import org.hibernate.annotations.DynamicUpdate;
 

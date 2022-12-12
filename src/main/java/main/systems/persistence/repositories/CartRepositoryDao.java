@@ -1,6 +1,6 @@
-package main.systems.repositories;
+package main.systems.persistence.repositories;
 
-import main.systems.entity.Order;
+import main.systems.persistence.entity.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

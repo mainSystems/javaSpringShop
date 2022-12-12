@@ -1,15 +1,15 @@
 package main.systems.controllers;
 
 
-import main.systems.converters.CustomerConverter;
+import main.systems.persistence.converters.CustomerConverter;
 import main.systems.data.CountProducts;
-import main.systems.dto.CustomerDto;
-import main.systems.dto.ProductDto;
-import main.systems.entity.Order;
-import main.systems.entity.Product;
-import main.systems.services.ServiceCart;
-import main.systems.services.ServiceProduct;
-import main.systems.services.ServiceUser;
+import main.systems.persistence.dto.CustomerDto;
+import main.systems.persistence.dto.ProductDto;
+import main.systems.persistence.entity.Order;
+import main.systems.persistence.entity.Product;
+import main.systems.persistence.services.ServiceCart;
+import main.systems.persistence.services.ServiceProduct;
+import main.systems.persistence.services.ServiceUser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

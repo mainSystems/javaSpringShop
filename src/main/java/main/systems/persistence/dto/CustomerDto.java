@@ -1,8 +1,8 @@
-package main.systems.dto;
+package main.systems.persistence.dto;
 
 import lombok.Data;
-import main.systems.entity.Customer;
-import main.systems.entity.Role;
+import main.systems.persistence.entity.Customer;
+import main.systems.persistence.entity.Role;
 
 import java.util.Collection;
 

@@ -1,16 +1,15 @@
-package main.systems.services;
+package main.systems.persistence.services;
 
-import main.systems.entity.Order;
-import main.systems.entity.Product;
-import main.systems.repositories.CartRepository;
-import main.systems.repositories.ProductRepository;
+import main.systems.persistence.entity.Order;
+import main.systems.persistence.entity.Product;
+import main.systems.persistence.repositories.CartRepository;
+import main.systems.persistence.repositories.ProductRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.Map;
 
 @Component
 public class ServiceCart {

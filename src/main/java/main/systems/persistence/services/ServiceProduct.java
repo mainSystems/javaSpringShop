@@ -1,7 +1,7 @@
-package main.systems.services;
+package main.systems.persistence.services;
 
-import main.systems.entity.Product;
-import main.systems.repositories.ProductRepository;
+import main.systems.persistence.entity.Product;
+import main.systems.persistence.repositories.ProductRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
