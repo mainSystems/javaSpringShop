@@ -10,36 +10,15 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
-//@EnableWebSecurity
-//@RequiredArgsConstructor
 @Configuration
 @Slf4j
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true, jsr250Enabled = true)
 public class securityConfig {
-//public class securityConfig extends WebSecurityConfigurerAdapter {
     private ServiceUser serviceUser;
-
-//    @Override
-//    protected void configure(HttpSecurity http) throws Exception {
-//    log.info("Auth provider");
-//        http.csrf().disable();
-//        http.authorizeRequests()
-//                .antMatchers("/**").authenticated()
-//                .antMatchers("/**", "/app/api/v1/shop/**").hasAnyRole("USER", "ADMIN")
-//                .antMatchers("/api/v1/shop/admin/**").hasAnyAuthority("RIGHT_ADMIN")
-//                .anyRequest().permitAll()
-//                .and()
-//                .formLogin()
-//                .and()
-//                .logout()
-//                .invalidateHttpSession(true)
-//                .deleteCookies("JSESSIONID");
-//    }
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         log.info("Auth provider");
-        httpSecurity.csrf().disable();
        return  httpSecurity.authorizeHttpRequests()
                .antMatchers("/**").authenticated()
                .antMatchers("/**", "/app/api/v1/shop/**").hasAnyRole("USER", "ADMIN")
@@ -52,6 +31,7 @@ public class securityConfig {
                .invalidateHttpSession(true)
                .deleteCookies("JSESSIONID")
                .and()
+               .csrf().disable()
                .build();
     }
 

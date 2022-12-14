@@ -2,7 +2,7 @@ package main.systems.controllers;
 
 
 import main.systems.persistence.converters.CustomerConverter;
-import main.systems.data.CountProducts;
+import main.systems.persistence.dto.CountProductsDto;
 import main.systems.persistence.dto.CustomerDto;
 import main.systems.persistence.dto.ProductDto;
 import main.systems.persistence.entity.Order;
@@ -61,12 +61,12 @@ public class ShopController {
     @GetMapping("/products")
     public String addProductForm(@RequestParam String idProduct, Model model) {
         model.addAttribute("idProduct", idProduct);
-        model.addAttribute("countProducts", new CountProducts());
+        model.addAttribute("countProducts", new CountProductsDto());
         return "productForm";
     }
 
     @PostMapping("/products")
-    public String addProductSubmit(HttpServletRequest request, @ModelAttribute CountProducts countProducts, Model
+    public String addProductSubmit(HttpServletRequest request, @ModelAttribute CountProductsDto countProducts, Model
             model) {
         String referer = request.getHeader("Referer");
         Long productId = countProducts.getId();

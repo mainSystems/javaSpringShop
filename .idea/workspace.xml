@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="&quot;Урок 11. Spring Security&quot; csrf().disable()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/configs/securityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/configs/securityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/data/CountProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/dto/CountProductsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/dto/ProductDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +111,7 @@
     </configuration>
     <configuration name="ShopWebApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.systems.ShopWebApp" />
-      <module name="JavaServlet" />
+      <module name="SpringShop" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.systems.persistence.entity.repositories.*" />
