@@ -17,7 +17,7 @@ public class StandardAuthenticationProviderToken extends AbstractUserDetailsAuth
 
     @Override
     protected void additionalAuthenticationChecks(UserDetails userDetails, UsernamePasswordAuthenticationToken authentication) throws AuthenticationException {
-        if(!Objects.equals(userDetails.getPassword(), authentication.getCredentials())) {
+        if (!Objects.equals(userDetails.getPassword(), authentication.getCredentials())) {
             throw new BadCredentialsException("Bad credentials");
         }
     }
