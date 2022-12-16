@@ -1,6 +1,7 @@
 package main.systems.security.configs;
 
 import lombok.extern.slf4j.Slf4j;
+import main.systems.persistence.repositories.CustomerRepository;
 import main.systems.persistence.services.ServiceUser;
 import main.systems.security.JwtRequestFilter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,8 @@ public class securityConfig {
     private ServiceUser serviceUser;
     @Autowired
     private JwtRequestFilter jwtRequestFilter;
+    @Autowired
+    private CustomerRepository customerRepository;
 
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() {
@@ -67,13 +70,14 @@ public class securityConfig {
 
     @Bean
     UserDetailsService userDetailsService() {
-        UserDetails user = User.builder()
-                .username("user")
-                .password("pass")
-                .authorities("RIGHT_ADMIN")
-                .build();
-
-        return new InMemoryUserDetailsManager(user);
+        return new ServiceUser(customerRepository);
+//        UserDetails user = User.builder()
+//                .username("user")
+//                .password("pass")
+//                .authorities("RIGHT_ADMIN")
+//                .build();
+//
+//        return new InMemoryUserDetailsManager(user);
     }
 
     @Bean

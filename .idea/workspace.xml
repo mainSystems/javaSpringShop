@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="&quot;Урок 11. Spring Security&quot; some tune">
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/StandardAuthenticationProviderToken.java" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="&quot;Урок 12. Практика&quot; some tune">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/dto/CountProductsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/dto/CountProductsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/security/StandardAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/StandardAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/security/configs/securityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/configs/securityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671045765445</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="&quot;Урок 12. Практика&quot; some tune">
+      <created>1671172655481</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1671172655481</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -366,13 +372,14 @@
     <MESSAGE value="&quot;Урок 11. Spring Security&quot; arranged" />
     <MESSAGE value="&quot;Урок 11. Spring Security&quot; csrf().disable()" />
     <MESSAGE value="&quot;Урок 11. Spring Security&quot; some tune" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Урок 11. Spring Security&quot; some tune" />
+    <MESSAGE value="&quot;Урок 12. Практика&quot; some tune" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Урок 12. Практика&quot; some tune" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/main/systems/configs/JwtRequestFilter.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/main/systems/security/JwtRequestFilter.java</url>
           <line>28</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
