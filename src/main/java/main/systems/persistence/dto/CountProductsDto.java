@@ -6,4 +6,5 @@ import lombok.Data;
 public class CountProductsDto {
     private Long id;
     private int count;
+
 }

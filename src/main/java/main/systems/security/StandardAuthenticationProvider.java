@@ -1,4 +1,4 @@
-package main.systems.configs;
+package main.systems.security;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

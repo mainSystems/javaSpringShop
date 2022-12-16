@@ -1,7 +1,7 @@
 package main.systems.controllers;
 
 import lombok.extern.slf4j.Slf4j;
-import main.systems.configs.service.JwtService;
+import main.systems.security.service.JwtService;
 import main.systems.persistence.dto.AuthRequestDto;
 import main.systems.persistence.dto.AuthResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;

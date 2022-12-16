@@ -1,9 +1,9 @@
-package main.systems.configs.service;
+package main.systems.security.service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import main.systems.configs.JwtProperties;
+import main.systems.security.JwtProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

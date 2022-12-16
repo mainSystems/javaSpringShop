@@ -1,7 +1,7 @@
-package main.systems.configs;
+package main.systems.security;
 
 import lombok.RequiredArgsConstructor;
-import main.systems.configs.service.JwtService;
+import main.systems.security.service.JwtService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;

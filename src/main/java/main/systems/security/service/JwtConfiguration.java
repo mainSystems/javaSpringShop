@@ -1,6 +1,6 @@
-package main.systems.configs.service;
+package main.systems.security.service;
 
-import main.systems.configs.JwtProperties;
+import main.systems.security.JwtProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;

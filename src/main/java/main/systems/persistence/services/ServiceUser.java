@@ -37,6 +37,7 @@ public class ServiceUser implements UserDetailsService {
         return roles.stream().map(role -> new SimpleGrantedAuthority(role.getName())).collect(Collectors.toList());
     }
 
+
     public List<Customer> getAllCustomer() {
         return customerRepository.getAllCustomers();
     }
