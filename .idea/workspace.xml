@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="&quot;Урок 12. Практика&quot; some tune">
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="&quot;Урок 12. Практика&quot; reformat/optimize import">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/security/StandardAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/StandardAuthenticationProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/security/configs/securityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/configs/securityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,7 +330,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671172655481</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="&quot;Урок 12. Практика&quot; add usersTake from DB">
+      <created>1671182144800</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1671182144800</updated>
+    </task>
+    <task id="LOCAL-00024" summary="&quot;Урок 12. Практика&quot; reformat/optimize import">
+      <created>1671182346306</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1671182346306</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -373,7 +385,9 @@
     <MESSAGE value="&quot;Урок 11. Spring Security&quot; csrf().disable()" />
     <MESSAGE value="&quot;Урок 11. Spring Security&quot; some tune" />
     <MESSAGE value="&quot;Урок 12. Практика&quot; some tune" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Урок 12. Практика&quot; some tune" />
+    <MESSAGE value="&quot;Урок 12. Практика&quot; add usersTake from DB" />
+    <MESSAGE value="&quot;Урок 12. Практика&quot; reformat/optimize import" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Урок 12. Практика&quot; reformat/optimize import" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
