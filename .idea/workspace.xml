@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="&quot;Урок 12. Практика&quot; added dbDump">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Product.java" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 2. Полезные блоки - created_at/updated_at">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pg-Dump-shop" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pg-Dump-shop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pg-Dump-shop" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pg-Dump-shop" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -355,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671182829165</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Урок 2. Полезные блоки - created_at/updated_at">
+      <created>1671485193444</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1671485193444</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -399,7 +404,8 @@
     <MESSAGE value="&quot;Урок 12. Практика&quot; add usersTake from DB" />
     <MESSAGE value="&quot;Урок 12. Практика&quot; reformat/optimize import" />
     <MESSAGE value="&quot;Урок 12. Практика&quot; added dbDump" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Урок 12. Практика&quot; added dbDump" />
+    <MESSAGE value="Урок 2. Полезные блоки - created_at/updated_at" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 2. Полезные блоки - created_at/updated_at" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
