@@ -1,4 +1,4 @@
-package main.systems.security.service;
+package main.systems.security.configs;
 
 import main.systems.security.JwtProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
