@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="&quot;Урок 12. Практика&quot; reformat/optimize import">
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="&quot;Урок 12. Практика&quot; added dbDump">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +82,7 @@
       <recent name="C:\java\javaSpringShop\src\main\resources\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="C:\java\javaSpringShop\src\main\java\main\systems\persistence\dto" />
       <recent name="C:\java\javaSpringShop\src\main\resources\configs" />
       <recent name="C:\java\javaSpringShop\src\main\resources" />
@@ -344,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671182346306</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="&quot;Урок 12. Практика&quot; added dbDump">
+      <created>1671182829165</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1671182829165</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -387,7 +395,8 @@
     <MESSAGE value="&quot;Урок 12. Практика&quot; some tune" />
     <MESSAGE value="&quot;Урок 12. Практика&quot; add usersTake from DB" />
     <MESSAGE value="&quot;Урок 12. Практика&quot; reformat/optimize import" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Урок 12. Практика&quot; reformat/optimize import" />
+    <MESSAGE value="&quot;Урок 12. Практика&quot; added dbDump" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Урок 12. Практика&quot; added dbDump" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
