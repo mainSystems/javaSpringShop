@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="&quot;Урок 12. Практика&quot; added dbDump">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +112,7 @@
     </configuration>
     <configuration name="ShopWebApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.systems.ShopWebApp" />
-      <module name="JavaServlet" />
+      <module name="SpringShop" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.systems.persistence.entity.repositories.*" />

@@ -1,9 +1,11 @@
 package main.systems.persistence.entity;
 
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
@@ -21,6 +23,15 @@ public class Product {
     private String title;
     @Column(name = "cost")
     private double cost;
+
+    @CreationTimestamp
+    @Column(name = "created_at")
+    private LocalDateTime createdAt;
+
+    @CreationTimestamp
+    @Column(name = "updated_at")
+    private LocalDateTime updatedAt;
+
 
     @OneToMany(mappedBy = "productsOrder", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Order> orders;
