@@ -4,66 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 3. Spring Expression Language. AOP - added login page for work with /auth  jwt">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/ShopWebApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/controllers/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/converters/CustomerConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/converters/ProductConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/dto/AuthRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/dto/AuthResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/dto/CountProductsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/dto/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/dto/ProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CartRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CartRepositoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CustomerRepositoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/ProductRepositoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/RoleRepositoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/StandardAuthenticationProviderToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/JwtRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/StandardAuthenticationProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/configs/JwtConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/configs/securityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/service/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pg-Dump-shop" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pg-Dump-shop.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/secret.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/shop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/background1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/background2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/background3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/old/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/old/list_cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/old/mainPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/productForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pg-Dump-shop" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 3. Spring Expression Language. AOP - adding auth page">
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/aop/ServiceTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/controllers/AopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/ShopWebApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/ShopWebApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,20 +64,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/dn/temp/javaSpringShop/src/main/resources/static/img&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.2562432&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/dn/temp/javaSpringShop/src/main/resources/static/img",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "settings.editor.splitter.proportion": "0.2562432"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
@@ -417,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671485193444</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Урок 3. Spring Expression Language. AOP - adding auth page">
+      <created>1671821584693</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1671821584693</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -464,7 +418,8 @@
     <MESSAGE value="Урок 2. Полезные блоки - created_at/updated_at" />
     <MESSAGE value="Урок 2. Полезные блоки - added login page for work with /auth  jwt" />
     <MESSAGE value="Урок 3. Spring Expression Language. AOP - added login page for work with /auth  jwt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 3. Spring Expression Language. AOP - added login page for work with /auth  jwt" />
+    <MESSAGE value="Урок 3. Spring Expression Language. AOP - adding auth page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 3. Spring Expression Language. AOP - adding auth page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
