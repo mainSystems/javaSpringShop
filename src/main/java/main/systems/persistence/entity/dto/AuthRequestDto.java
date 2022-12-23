@@ -1,4 +1,4 @@
-package main.systems.persistence.dto;
+package main.systems.persistence.entity.dto;
 
 import lombok.Getter;
 
@@ -6,5 +6,4 @@ import lombok.Getter;
 public class AuthRequestDto {
     private String username;
     private String password;
-
 }

@@ -1,7 +1,7 @@
 package main.systems.persistence.services;
 
-import main.systems.persistence.entity.Order;
-import main.systems.persistence.entity.Product;
+import main.systems.persistence.entity.model.Order;
+import main.systems.persistence.entity.model.Product;
 import main.systems.persistence.repositories.CartRepository;
 import main.systems.persistence.repositories.ProductRepository;
 import org.apache.logging.log4j.LogManager;

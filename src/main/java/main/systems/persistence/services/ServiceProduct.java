@@ -1,6 +1,6 @@
 package main.systems.persistence.services;
 
-import main.systems.persistence.entity.Product;
+import main.systems.persistence.entity.model.Product;
 import main.systems.persistence.repositories.ProductRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

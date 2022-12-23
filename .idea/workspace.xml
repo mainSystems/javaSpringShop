@@ -4,9 +4,66 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 2. Полезные блоки - created_at/updated_at">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pg-Dump-shop" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pg-Dump-shop" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pg-Dump-shop" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pg-Dump-shop" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 3. Spring Expression Language. AOP - added login page for work with /auth  jwt">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/ShopWebApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/controllers/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/controllers/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/converters/CustomerConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/converters/ProductConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/dto/AuthRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/dto/AuthResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/dto/CountProductsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/dto/CustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/dto/ProductDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/entity/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CartRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CartRepositoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/CustomerRepositoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/ProductRepositoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/repositories/RoleRepositoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/StandardAuthenticationProviderToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/JwtProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/StandardAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/configs/JwtConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/configs/securityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/service/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pg-Dump-shop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pg-Dump-shop.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/secret.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/shop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/background1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/background2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/background3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/old/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/old/list_cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/old/mainPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/productForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pg-Dump-shop" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -405,7 +462,9 @@
     <MESSAGE value="&quot;Урок 12. Практика&quot; reformat/optimize import" />
     <MESSAGE value="&quot;Урок 12. Практика&quot; added dbDump" />
     <MESSAGE value="Урок 2. Полезные блоки - created_at/updated_at" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 2. Полезные блоки - created_at/updated_at" />
+    <MESSAGE value="Урок 2. Полезные блоки - added login page for work with /auth  jwt" />
+    <MESSAGE value="Урок 3. Spring Expression Language. AOP - added login page for work with /auth  jwt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 3. Spring Expression Language. AOP - added login page for work with /auth  jwt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

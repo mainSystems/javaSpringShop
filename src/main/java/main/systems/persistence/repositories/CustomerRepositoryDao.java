@@ -1,6 +1,6 @@
 package main.systems.persistence.repositories;
 
-import main.systems.persistence.entity.Customer;
+import main.systems.persistence.entity.model.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
 package main.systems.persistence.repositories;
 
-import main.systems.persistence.entity.Order;
-import main.systems.persistence.entity.Product;
+import main.systems.persistence.entity.model.Order;
+import main.systems.persistence.entity.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

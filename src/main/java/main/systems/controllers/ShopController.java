@@ -2,11 +2,11 @@ package main.systems.controllers;
 
 
 import main.systems.persistence.converters.CustomerConverter;
-import main.systems.persistence.dto.CountProductsDto;
-import main.systems.persistence.dto.CustomerDto;
-import main.systems.persistence.dto.ProductDto;
-import main.systems.persistence.entity.Order;
-import main.systems.persistence.entity.Product;
+import main.systems.persistence.entity.dto.CountProductsDto;
+import main.systems.persistence.entity.dto.CustomerDto;
+import main.systems.persistence.entity.dto.ProductDto;
+import main.systems.persistence.entity.model.Order;
+import main.systems.persistence.entity.model.Product;
 import main.systems.persistence.services.ServiceCart;
 import main.systems.persistence.services.ServiceProduct;
 import main.systems.persistence.services.ServiceUser;

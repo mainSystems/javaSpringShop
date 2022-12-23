@@ -1,4 +1,4 @@
-package main.systems.persistence.entity;
+package main.systems.persistence.entity.model;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.DynamicUpdate;

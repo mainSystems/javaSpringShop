@@ -1,7 +1,7 @@
 package main.systems.persistence.converters;
 
-import main.systems.persistence.dto.CustomerDto;
-import main.systems.persistence.entity.Customer;
+import main.systems.persistence.entity.dto.CustomerDto;
+import main.systems.persistence.entity.model.Customer;
 import org.springframework.stereotype.Component;
 
 @Component
