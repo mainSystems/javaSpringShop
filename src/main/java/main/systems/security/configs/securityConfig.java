@@ -33,7 +33,7 @@ public class securityConfig {
 
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() {
-        return webSecurity -> webSecurity.ignoring().antMatchers("/auth", "/css/**", "/img/**");
+        return webSecurity -> webSecurity.ignoring().antMatchers("/auth", "/css/**", "/img/**", "/ws/**");
     }
 
     @Bean

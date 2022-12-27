@@ -2,12 +2,15 @@ package main.systems.persistence.services;
 
 import main.systems.persistence.entity.model.Product;
 import main.systems.persistence.repositories.ProductRepository;
+import main.systems.soap.products.Products;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 @Component
 public class ServiceProduct {
@@ -77,5 +80,17 @@ public class ServiceProduct {
                 break;
             }
         }
+    }
+
+    public static final Function<Product, Products> functionEntityToSoap = se -> {
+        Products s = new Products();
+        s.setId(se.getId());
+        s.setTitle(se.getTitle());
+        s.setCost(se.getCost());
+        return s;
+    };
+
+    public List<Products> getAllProductsSoap() {
+        return productRepository.getProducts().stream().map(functionEntityToSoap).collect(Collectors.toList());
     }
 }
