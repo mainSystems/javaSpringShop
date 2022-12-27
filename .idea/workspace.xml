@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 3. Spring Expression Language. AOP - adding serviceTimer">
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/soap/config/WebServiceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/soap/endpoints/ProductEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/soap/products/GetProductsRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/soap/products/GetProductsResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/soap/products/ObjectFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/soap/products/Products.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/systems/soap/products/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/products.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/persistence/services/ServiceProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/security/configs/securityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/security/configs/securityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pg-Dump-shop" beforeDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 4. Веб-инструментарий Spring Framework">
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/systems/soap/endpoints/ProductEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/systems/soap/endpoints/ProductEndpoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,21 +59,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/java/javaSpringShop/src/main/java/main/systems/soap/products",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "settings.editor.splitter.proportion": "0.2562432"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/java/javaSpringShop/src/main/java/main/systems/soap/products&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.2562432&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\java\javaSpringShop\src\main\java\main\systems\soap\products" />
@@ -389,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671825982513</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Урок 4. Веб-инструментарий Spring Framework">
+      <created>1672182251051</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1672182251051</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -413,7 +406,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="did get/display value" />
     <MESSAGE value="some small addings" />
     <MESSAGE value="small tun" />
     <MESSAGE value="middle hib2" />
@@ -438,7 +430,8 @@
     <MESSAGE value="Урок 3. Spring Expression Language. AOP - added login page for work with /auth  jwt" />
     <MESSAGE value="Урок 3. Spring Expression Language. AOP - adding auth page" />
     <MESSAGE value="Урок 3. Spring Expression Language. AOP - adding serviceTimer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 3. Spring Expression Language. AOP - adding serviceTimer" />
+    <MESSAGE value="Урок 4. Веб-инструментарий Spring Framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 4. Веб-инструментарий Spring Framework" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

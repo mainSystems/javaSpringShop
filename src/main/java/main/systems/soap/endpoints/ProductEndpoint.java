@@ -28,7 +28,6 @@ public class ProductEndpoint {
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getProductsRequest")
     @ResponsePayload
     public GetProductsResponse getAllProductsSoap(@RequestPayload GetProductsRequest request) {
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!response = ");
         GetProductsResponse response = new GetProductsResponse();
         serviceProduct.getAllProductsSoap().forEach(response.getProducts()::add);
         return response;
