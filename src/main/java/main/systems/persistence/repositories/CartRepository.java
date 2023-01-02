@@ -5,6 +5,7 @@ import main.systems.persistence.entity.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -37,6 +38,7 @@ public class CartRepository {
         }
     }
 
+    @Transactional
     public void addProduct(Product product, Integer count) {
         Date date = new Date(System.currentTimeMillis());
         Order productToAdd;
@@ -56,6 +58,7 @@ public class CartRepository {
         cartRepositoryDao.save(productToAdd);
     }
 
+    @Transactional
     public void deleteProduct(Product product, Integer count) {
         List<Order> productsToDel = cartRepositoryDao.findOrderId(product.getId());
         Order productToDel = cartRepositoryDao.getReferenceById(productsToDel.get(0).getId());
@@ -65,6 +68,7 @@ public class CartRepository {
         cartRepositoryDao.save(productToDel);
     }
 
+    @Transactional
     public void purgeProduct(Product product) {
         List<Order> productsToPurge = cartRepositoryDao.findOrderId(product.getId());
         if (isOrderContainProductByKey(product)) {
