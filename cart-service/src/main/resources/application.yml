@@ -1,0 +1,6 @@
+server:
+  port: 8181
+  servlet:
+    context-path: /app/shop-carts
+    session:
+      timeout: 60s
