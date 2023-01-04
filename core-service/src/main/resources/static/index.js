@@ -60,7 +60,7 @@ angular.module('appShop', ['ngStorage'])
     };
 
     $scope.newCart = function() {
-        $http.get(contextPath + '/new_cart')
+        $http.get(contextPath + '/new_order')
         .then(function (response){
             $scope.loadProducts();
         });

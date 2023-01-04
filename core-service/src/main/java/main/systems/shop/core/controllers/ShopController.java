@@ -43,17 +43,17 @@ public class ShopController {
         return productService.getProducts().stream().map(product -> new ProductDto(product)).toList();
     }
 
-    @GetMapping("/new_cart")
+    @GetMapping("/new_order")
     @ResponseBody
-    private void new_cart() {
-        orderService.createNewCart();
-        log.info("New cart created: " + orderService);
+    private void new_order() {
+        orderService.createNewOrder();
+        log.info("New order created: " + orderService);
     }
 
 
-    @GetMapping("/list_cart")
+    @GetMapping("/list_order")
     @ResponseBody
-    private List<Order> list_cart() {
+    private List<Order> list_order() {
         return orderService.getOrder();
     }
 

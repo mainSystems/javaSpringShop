@@ -35,7 +35,7 @@ public class ServiceProduct {
                     Product product = productRepository.getProductsById(productId);
                     orderService.addProducts(product, productCount);
                 } else {
-                    log.info("Create cart first");
+                    log.info("Create order first");
                 }
                 break;
             }
@@ -44,7 +44,7 @@ public class ServiceProduct {
                     Product product = productRepository.getProductsById(productId);
                     orderService.delProduct(product, productCount * -1);
                 } else {
-                    log.info("Create cart first");
+                    log.info("Create order first");
                 }
                 break;
             }
@@ -54,7 +54,7 @@ public class ServiceProduct {
 
     public void addProductSubmit(Long productId, int productCount) {
         if (productCount == 0) {
-            log.info("Nothing to add in to cart: " + orderService);
+            log.info("Nothing to add in to order: " + orderService);
             return;
         }
 
@@ -65,7 +65,7 @@ public class ServiceProduct {
                     Product product = productRepository.getProductsById(productId);
                     orderService.addProducts(product, productCount);
                 } else {
-                    log.info("Create cart first");
+                    log.info("Create order first");
                 }
                 break;
             }
@@ -74,7 +74,7 @@ public class ServiceProduct {
                     Product product = productRepository.getProductsById(productId);
                     orderService.delProduct(product, productCount * -1);
                 } else {
-                    log.info("Create cart first");
+                    log.info("Create order first");
                 }
                 break;
             }
