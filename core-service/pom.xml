@@ -135,6 +135,11 @@
             <artifactId>wsdl4j</artifactId>
             <version>1.6.3</version>
         </dependency>
+        <dependency>
+            <groupId>main.systems</groupId>
+            <artifactId>api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

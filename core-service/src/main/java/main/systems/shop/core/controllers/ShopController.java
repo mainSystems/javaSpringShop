@@ -1,17 +1,16 @@
 package main.systems.shop.core.controllers;
 
 
+import lombok.extern.slf4j.Slf4j;
+import main.systems.shop.api.dto.CountProductsDto;
 import main.systems.shop.core.persistence.converters.CustomerConverter;
-import main.systems.shop.core.persistence.entity.dto.CountProductsDto;
-import main.systems.shop.core.persistence.entity.dto.CustomerDto;
-import main.systems.shop.core.persistence.entity.dto.ProductDto;
 import main.systems.shop.core.persistence.entity.model.Order;
 import main.systems.shop.core.persistence.entity.model.Product;
-import main.systems.shop.core.persistence.services.ServiceCart;
+import main.systems.shop.core.persistence.entity.model.dto.CustomerDto;
+import main.systems.shop.core.persistence.entity.model.dto.ProductDto;
+import main.systems.shop.core.persistence.services.ServiceOrder;
 import main.systems.shop.core.persistence.services.ServiceProduct;
 import main.systems.shop.core.persistence.services.ServiceUser;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,18 +20,18 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
+@Slf4j
 @RequestMapping("/api/v1/shop")
 public class ShopController {
     @Autowired
     private ServiceProduct productService;
     @Autowired
-    private ServiceCart cartService;
+    private ServiceOrder orderService;
 
     @Autowired
     private ServiceUser userService;
 
     private CustomerConverter customerConverter;
-    private static final Logger logger = LogManager.getLogger(ShopController.class);
 
     public ShopController() {
     }
@@ -47,15 +46,15 @@ public class ShopController {
     @GetMapping("/new_cart")
     @ResponseBody
     private void new_cart() {
-        cartService.createNewCart();
-        logger.info("New cart created: " + cartService);
+        orderService.createNewCart();
+        log.info("New cart created: " + orderService);
     }
 
 
     @GetMapping("/list_cart")
     @ResponseBody
     private List<Order> list_cart() {
-        return cartService.getCart();
+        return orderService.getOrder();
     }
 
     @GetMapping("/products")
@@ -85,14 +84,14 @@ public class ShopController {
     @DeleteMapping("/products")
     @ResponseBody
     public void purgeProduct(@RequestParam Long productId) {
-        cartService.purgeProductById(productId);
+        orderService.purgeProductById(productId);
     }
 
     @GetMapping("/productsCount")
     @ResponseBody
     public long getProductCount(@RequestParam Long productId) {
         Product product = productService.getProductsId(productId);
-        return cartService.getCartProductCount(product);
+        return orderService.getOrderProductCount(product);
     }
 
     @GetMapping("/admin/user_info")

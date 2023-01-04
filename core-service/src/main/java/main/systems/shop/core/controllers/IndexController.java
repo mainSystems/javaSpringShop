@@ -1,8 +1,8 @@
 package main.systems.shop.core.controllers;
 
 import lombok.extern.slf4j.Slf4j;
-import main.systems.shop.core.persistence.entity.dto.AuthRequestDto;
-import main.systems.shop.core.persistence.entity.dto.AuthResponseDto;
+import main.systems.shop.api.dto.AuthRequestDto;
+import main.systems.shop.api.dto.AuthResponseDto;
 import main.systems.shop.core.security.service.JwtService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -41,8 +41,6 @@ public class IndexController {
     @PostMapping("/auth")
     @ResponseBody
     public AuthResponseDto authorize(@RequestBody AuthRequestDto request) {
-//        UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword());
-//        log.info("Auth request: [{}, {}]", request.getUsername(), request.getPassword());
 
         try {
             Authentication authenticate = authenticationManager.authenticate(

@@ -9,19 +9,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="JavaServlet" />
         <module name="core-service" />
-        <module name="cart-service" />
+        <module name="api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="core" target="17" />
+      <module name="cart-service" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="JavaServlet" options="-parameters" />
       <module name="SpringShop" options="" />
-      <module name="cart-service" options="-parameters" />
-      <module name="core" options="-parameters" />
       <module name="core-service" options="-parameters" />
     </option>
   </component>
