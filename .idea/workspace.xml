@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 5. Spring Cloud. Часть 1 - add get product by id">
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/OrderController.java" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 5. Spring Cloud. Часть 1 - cut controllers">
+      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/ProductControllerRest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/controllers/ShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/controllers/ShopController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/ProductController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -457,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672878227056</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Урок 5. Spring Cloud. Часть 1 - cut controllers">
+      <created>1672941795034</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1672941795034</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -481,7 +486,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="hib2 - working now" />
     <MESSAGE value="allDone - lesson8" />
     <MESSAGE value="some css styling" />
     <MESSAGE value="some css styling v2" />
@@ -506,7 +510,8 @@
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - cart -&gt; order" />
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - add something" />
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - add get product by id" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 5. Spring Cloud. Часть 1 - add get product by id" />
+    <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - cut controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 5. Spring Cloud. Часть 1 - cut controllers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
