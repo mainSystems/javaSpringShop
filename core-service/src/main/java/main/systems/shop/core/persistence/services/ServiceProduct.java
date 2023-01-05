@@ -23,7 +23,7 @@ public class ServiceProduct {
         return productRepository.getProducts();
     }
 
-    public Product getProductsId(Long productId) {
+    public Product getProductsById(Long productId) {
         return productRepository.getProductsById(productId);
     }
 

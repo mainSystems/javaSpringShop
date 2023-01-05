@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 5. Spring Cloud. Часть 1 - moved to core-service + api">
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 5. Spring Cloud. Часть 1 - add something">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/ShopController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/services/ServiceProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/services/ServiceProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/controllers/ShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/controllers/ShopController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/services/ServiceProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/services/ServiceProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -429,7 +430,28 @@
       <option name="project" value="LOCAL" />
       <updated>1672875269522</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Урок 5. Spring Cloud. Часть 1 - cart -&gt; order">
+      <created>1672875789197</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1672875789197</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Урок 5. Spring Cloud. Часть 1 - add something">
+      <created>1672875947598</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1672875947598</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Урок 5. Spring Cloud. Часть 1 - add something">
+      <created>1672875981348</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1672875981348</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -453,8 +475,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="middle hib2" />
-    <MESSAGE value="middle hib2 - not working" />
     <MESSAGE value="middle hib2 - not working add Dump base" />
     <MESSAGE value="hib2 - working now" />
     <MESSAGE value="allDone - lesson8" />
@@ -478,7 +498,9 @@
     <MESSAGE value="Урок 4. Веб-инструментарий Spring Framework" />
     <MESSAGE value="add annotation @Transactional" />
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - moved to core-service + api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 5. Spring Cloud. Часть 1 - moved to core-service + api" />
+    <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - cart -&gt; order" />
+    <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - add something" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 5. Spring Cloud. Часть 1 - add something" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

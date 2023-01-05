@@ -90,7 +90,7 @@ public class ShopController {
     @GetMapping("/productsCount")
     @ResponseBody
     public long getProductCount(@RequestParam Long productId) {
-        Product product = productService.getProductsId(productId);
+        Product product = productService.getProductsById(productId);
         return orderService.getOrderProductCount(product);
     }
 
@@ -98,5 +98,11 @@ public class ShopController {
     @ResponseBody
     public List<CustomerDto> getAllCustomers() {
         return userService.getAllCustomer().stream().map(customer -> new CustomerDto(customer)).toList();
+    }
+
+    @GetMapping("/product/{productId}")
+    @ResponseBody
+    public ProductDto getProductById(@PathVariable(name = "productId") Long productId) {
+        return new ProductDto(productService.getProductsById(productId));
     }
 }
