@@ -1,7 +1,7 @@
 package main.systems.shop.core.controllers;
 
 import lombok.extern.slf4j.Slf4j;
-import main.systems.shop.core.persistence.entity.model.Order;
+import main.systems.shop.core.persistence.entity.dto.OrderDto;
 import main.systems.shop.core.persistence.entity.model.Product;
 import main.systems.shop.core.persistence.services.ServiceOrder;
 import main.systems.shop.core.persistence.services.ServiceProduct;
@@ -28,8 +28,8 @@ public class OrderController {
     }
 
     @GetMapping("/list_order")
-    private List<Order> list_order() {
-        return orderService.getOrder();
+    private List<OrderDto> list_order() {
+        return orderService.getOrder().stream().map(order -> new OrderDto(order)).toList();
     }
 
     @DeleteMapping("/products")

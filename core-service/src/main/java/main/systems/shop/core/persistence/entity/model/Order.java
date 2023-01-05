@@ -37,7 +37,7 @@ public class Order {
     private Customer customersOrder;
     @ManyToOne
     @JoinColumn(name = "product_id")
-    Product productsOrder;
+    private Product productsOrder;
 
     public Order() {
     }
@@ -72,6 +72,22 @@ public class Order {
 
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(LocalDateTime updatedAt) {
+        this.updatedAt = updatedAt;
     }
 
     public Customer getCustomersOrder() {

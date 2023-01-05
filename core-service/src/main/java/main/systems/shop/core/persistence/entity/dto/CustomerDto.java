@@ -1,4 +1,4 @@
-package main.systems.shop.core.persistence.entity.model.dto;
+package main.systems.shop.core.persistence.entity.dto;
 
 
 import main.systems.shop.core.persistence.entity.model.Customer;

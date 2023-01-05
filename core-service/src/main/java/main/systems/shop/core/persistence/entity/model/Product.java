@@ -9,8 +9,6 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
-//@Data
-//@NoArgsConstructor
 @DynamicInsert
 @DynamicUpdate
 @Table(name = "products")
