@@ -1,5 +1,6 @@
 package main.systems.shop.core.persistence.repositories;
 
+import main.systems.shop.core.persistence.entity.model.Customer;
 import main.systems.shop.core.persistence.entity.model.Order;
 import main.systems.shop.core.persistence.entity.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,16 +16,6 @@ import java.util.List;
 public class OrderRepository {
     @Autowired
     protected OrderRepositoryDao orderRepositoryDao;
-    @Autowired
-    protected CustomerRepositoryDao customerRepositoryDao;
-    @Autowired
-    protected ProductRepositoryDao productRepositoryDao;
-
-    public OrderRepository(OrderRepositoryDao orderRepositoryDao, CustomerRepositoryDao customerRepositoryDao, ProductRepositoryDao productRepositoryDao) {
-        this.orderRepositoryDao = orderRepositoryDao;
-        this.customerRepositoryDao = customerRepositoryDao;
-        this.productRepositoryDao = productRepositoryDao;
-    }
 
     public boolean isOrderContainProductByKey(Product product) {
         return (orderRepositoryDao.findCountOrdersByProductId(product.getId()) > 0) ? true : false;
@@ -39,7 +30,7 @@ public class OrderRepository {
     }
 
     @Transactional
-    public void addProduct(Product product, Integer count) {
+    public void addProduct(Product product, Integer count, Customer customer) {
         Date date = new Date(System.currentTimeMillis());
         Order productToAdd;
 
@@ -53,7 +44,7 @@ public class OrderRepository {
             productToAdd.setQuantity(count);
             productToAdd.setDate(date);
             productToAdd.setCost(product.getCost());
-            productToAdd.setCustomersOrder(customerRepositoryDao.getReferenceById((long) 1));
+            productToAdd.setCustomersOrder(customer);
         }
         orderRepositoryDao.save(productToAdd);
     }

@@ -42,4 +42,10 @@ public class OrderController {
         Product product = productService.getProductsById(productId);
         return orderService.getOrderProductCount(product);
     }
+
+    @PostMapping("/productsCount")
+    @ResponseBody
+    public void changeProductCount(@RequestParam Long productId, @RequestParam int productCount) {
+        orderService.addProductSubmit(productId, productCount);
+    }
 }

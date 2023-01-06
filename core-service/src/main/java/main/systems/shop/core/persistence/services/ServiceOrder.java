@@ -1,6 +1,7 @@
 package main.systems.shop.core.persistence.services;
 
 import lombok.extern.slf4j.Slf4j;
+import main.systems.shop.core.persistence.entity.model.Customer;
 import main.systems.shop.core.persistence.entity.model.Order;
 import main.systems.shop.core.persistence.entity.model.Product;
 import main.systems.shop.core.persistence.repositories.OrderRepository;
@@ -18,6 +19,9 @@ public class ServiceOrder {
     ProductRepository productRepository;
     @Autowired
     OrderRepository orderRepository;
+    @Autowired
+    ServiceCustomer serviceCustomer;
+
 
 
     public void delProduct(Product product, Integer count) {
@@ -39,10 +43,30 @@ public class ServiceOrder {
 
     public void addProducts(Product product, Integer count) {
         if (product != null && count > 0) {
-            orderRepository.addProduct(product, count);
+            Customer customer = serviceCustomer.getCustomerById(1L); //FIX ME
+            orderRepository.addProduct(product, count, customer);
         }
     }
 
+    public void addProductSubmit(Long productId, int productCount) {
+        if (productCount == 0) {
+            return;
+        }
+
+        String isDel = (productCount < 0) ? "del" : "add";
+        switch (isDel) {
+            case "add": {
+                Product product = productRepository.getProductsById(productId);
+                addProducts(product, productCount);
+                break;
+            }
+            case "del": {
+                Product product = productRepository.getProductsById(productId);
+                delProduct(product, productCount * -1);
+                break;
+            }
+        }
+    }
 
     public List<Order> getOrder() {
         return orderRepository.getOrder();

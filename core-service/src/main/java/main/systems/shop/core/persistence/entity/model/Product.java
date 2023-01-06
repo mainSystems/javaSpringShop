@@ -67,13 +67,5 @@ public class Product {
         this.cost = cost;
     }
 
-    @Override
-    public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", cost=" + cost +
-                '}';
-    }
 }
 

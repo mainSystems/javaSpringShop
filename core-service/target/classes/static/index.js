@@ -1,5 +1,6 @@
 angular.module('appShop', ['ngStorage'])
     .controller('indexController', function($scope, $http, $localStorage) {
+    const contextAuthPath='http://localhost:8180/app/auth';
     const contextPath='http://localhost:8180/app/api/v1/shop';
 
     if($localStorage.marketUser) {
@@ -17,7 +18,7 @@ angular.module('appShop', ['ngStorage'])
     }
 
     $scope.tryToAuth = function() {
-        $http.post('http://localhost:8180/app/auth', $scope.user)
+        $http.post(contextAuthPath, $scope.user)
         .then(function successCallback(response){
             if(response.data.token) {
                 $http.defaults.headers.common.Authorization =  'Bearer ' + response.data.token;
@@ -54,12 +55,12 @@ angular.module('appShop', ['ngStorage'])
     $scope.loadProducts = function() {
         $http.get(contextPath + '/mainPage')
         .then(function (response){
-            console.log(response);
+//            console.log(response);
             $scope.productList = response.data;
         });
     };
 
-    $scope.newCart = function() {
+    $scope.newOrder = function() {
         $http.get(contextPath + '/new_order')
         .then(function (response){
             $scope.loadProducts();
@@ -75,7 +76,7 @@ angular.module('appShop', ['ngStorage'])
                 productCount: productCount
             }
         }).then(function(response) {
-            console.log(response);
+//            console.log(response);
             $scope.loadProducts();
         });
     }
@@ -103,7 +104,7 @@ angular.module('appShop', ['ngStorage'])
                 $scope.productCount = response.data;
                 $scope.mapProductsCount.set(productId,$scope.productCount);
 //                console.log(productId);
-                console.log($scope.mapProductsCount);
+//                console.log($scope.mapProductsCount);
             });
         }
 

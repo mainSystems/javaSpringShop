@@ -16,8 +16,6 @@ import java.util.stream.Collectors;
 public class ServiceProduct {
     @Autowired
     ProductRepository productRepository;
-    @Autowired
-    private ServiceOrder orderService;
 
     public List<Product> getProducts() {
         return productRepository.getProducts();
@@ -25,60 +23,6 @@ public class ServiceProduct {
 
     public Product getProductsById(Long productId) {
         return productRepository.getProductsById(productId);
-    }
-
-    public void changeProductCount(Long productId, int productCount) {
-        String isDel = (productCount < 0) ? "del" : "add";
-        switch (isDel) {
-            case "add": {
-                if (orderService != null) {
-                    Product product = productRepository.getProductsById(productId);
-                    orderService.addProducts(product, productCount);
-                } else {
-                    log.info("Create order first");
-                }
-                break;
-            }
-            case "del": {
-                if (orderService != null) {
-                    Product product = productRepository.getProductsById(productId);
-                    orderService.delProduct(product, productCount * -1);
-                } else {
-                    log.info("Create order first");
-                }
-                break;
-            }
-        }
-
-    }
-
-    public void addProductSubmit(Long productId, int productCount) {
-        if (productCount == 0) {
-            log.info("Nothing to add in to order: " + orderService);
-            return;
-        }
-
-        String isDel = (productCount < 0) ? "del" : "add";
-        switch (isDel) {
-            case "add": {
-                if (orderService != null) {
-                    Product product = productRepository.getProductsById(productId);
-                    orderService.addProducts(product, productCount);
-                } else {
-                    log.info("Create order first");
-                }
-                break;
-            }
-            case "del": {
-                if (orderService != null) {
-                    Product product = productRepository.getProductsById(productId);
-                    orderService.delProduct(product, productCount * -1);
-                } else {
-                    log.info("Create order first");
-                }
-                break;
-            }
-        }
     }
 
     public static final Function<Product, Products> functionEntityToSoap = se -> {

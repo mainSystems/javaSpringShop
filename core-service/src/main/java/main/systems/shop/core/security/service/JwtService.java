@@ -17,9 +17,7 @@ import java.util.Map;
 
 @Component
 public class JwtService {
-
-//    private final String secret = "Hjwjv5vvNX1v8se2AVPeibK6s0c89kFtNwsEvNWreguz6kVMf92ZkjSFp8rmA0jt";
-
+    
     @Autowired
     private JwtProperties properties;
 

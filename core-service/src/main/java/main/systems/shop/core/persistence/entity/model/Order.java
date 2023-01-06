@@ -8,8 +8,6 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
-//@Data
-//@NoArgsConstructor
 @DynamicUpdate
 @Table(name = "orders")
 public class Order {
@@ -106,15 +104,4 @@ public class Order {
         this.productsOrder = productsOrder;
     }
 
-    @Override
-    public String toString() {
-        return "Order{" +
-                "id=" + id +
-                ", date='" + date + '\'' +
-                ", cost=" + cost +
-                ", quantity=" + quantity +
-//                ", customersOrder=" + customersOrder +
-//                ", products=" + productsOrder +
-                '}';
-    }
 }

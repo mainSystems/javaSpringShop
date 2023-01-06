@@ -10,8 +10,6 @@ import java.util.Collection;
 import java.util.List;
 
 @Entity
-//@Data
-//@NoArgsConstructor
 @DynamicInsert
 @DynamicUpdate
 @Table(name = "customers")
@@ -93,22 +91,5 @@ public class Customer {
 
     public Collection<Role> getRoles() {
         return roles;
-    }
-
-    //    public List<Order> getOrders() {
-//        return orders;
-//    }
-//
-//    public void setOrders(List<Order> orders) {
-//        this.orders = orders;
-//    }
-
-    @Override
-    public String toString() {
-        return "Customer{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-//                ", orders_count=" + orders.size() +
-                '}';
     }
 }
