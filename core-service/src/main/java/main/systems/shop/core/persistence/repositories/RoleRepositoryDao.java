@@ -1,6 +1,6 @@
 package main.systems.shop.core.persistence.repositories;
 
-import main.systems.shop.core.persistence.entity.model.Role;
+import main.systems.shop.api.entity.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

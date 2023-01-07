@@ -3,7 +3,7 @@ server:
   servlet:
     context-path: /app
     session:
-      timeout: 60s
+      timeout: 600s
 
 spring:
   jpa:

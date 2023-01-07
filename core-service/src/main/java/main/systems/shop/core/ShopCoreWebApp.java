@@ -1,16 +1,14 @@
 package main.systems.shop.core;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 
-@Slf4j
 @SpringBootApplication
+@EntityScan("main.systems.shop.api")
 public class ShopCoreWebApp {
     public static void main(String[] args) {
         SpringApplication.run(ShopCoreWebApp.class, args);
-        log.info("Starting app");
     }
-
 }

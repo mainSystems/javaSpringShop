@@ -1,7 +1,7 @@
 package main.systems.shop.core.persistence.services;
 
 import lombok.extern.slf4j.Slf4j;
-import main.systems.shop.core.persistence.entity.model.Product;
+import main.systems.shop.api.entity.model.Product;
 import main.systems.shop.core.persistence.repositories.ProductRepository;
 import main.systems.shop.core.soap.products.Products;
 import org.springframework.beans.factory.annotation.Autowired;

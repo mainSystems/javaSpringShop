@@ -1,8 +1,8 @@
 package main.systems.shop.core.persistence.repositories;
 
-import main.systems.shop.core.persistence.entity.model.Customer;
-import main.systems.shop.core.persistence.entity.model.Order;
-import main.systems.shop.core.persistence.entity.model.Product;
+import main.systems.shop.api.entity.model.Customer;
+import main.systems.shop.api.entity.model.Order;
+import main.systems.shop.api.entity.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

@@ -1,11 +1,10 @@
 package main.systems.shop.core.persistence.services;
 
 import lombok.extern.slf4j.Slf4j;
-import main.systems.shop.core.persistence.entity.model.Customer;
-import main.systems.shop.core.persistence.entity.model.Order;
-import main.systems.shop.core.persistence.entity.model.Product;
+import main.systems.shop.api.entity.model.Customer;
+import main.systems.shop.api.entity.model.Order;
+import main.systems.shop.api.entity.model.Product;
 import main.systems.shop.core.persistence.repositories.OrderRepository;
-import main.systems.shop.core.persistence.repositories.ProductRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -16,7 +15,7 @@ import java.util.List;
 @Slf4j
 public class ServiceOrder {
     @Autowired
-    ProductRepository productRepository;
+    ServiceProduct serviceProduct;
     @Autowired
     OrderRepository orderRepository;
     @Autowired
@@ -56,12 +55,12 @@ public class ServiceOrder {
         String isDel = (productCount < 0) ? "del" : "add";
         switch (isDel) {
             case "add": {
-                Product product = productRepository.getProductsById(productId);
+                Product product = serviceProduct.getProductsById(productId);
                 addProducts(product, productCount);
                 break;
             }
             case "del": {
-                Product product = productRepository.getProductsById(productId);
+                Product product = serviceProduct.getProductsById(productId);
                 delProduct(product, productCount * -1);
                 break;
             }
@@ -77,7 +76,7 @@ public class ServiceOrder {
     }
 
     public void purgeProductById(Long productId) {
-        Product product = productRepository.getProductsById(productId);
+        Product product = serviceProduct.getProductsById(productId);
         orderRepository.purgeProduct(product);
     }
 

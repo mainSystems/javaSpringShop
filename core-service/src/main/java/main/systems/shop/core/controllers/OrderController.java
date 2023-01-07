@@ -1,8 +1,8 @@
 package main.systems.shop.core.controllers;
 
 import lombok.extern.slf4j.Slf4j;
-import main.systems.shop.core.persistence.entity.dto.OrderDto;
-import main.systems.shop.core.persistence.entity.model.Product;
+import main.systems.shop.api.entity.dto.OrderDto;
+import main.systems.shop.api.entity.model.Product;
 import main.systems.shop.core.persistence.services.ServiceOrder;
 import main.systems.shop.core.persistence.services.ServiceProduct;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,0 +1,20 @@
+server:
+  port: 8181
+  servlet:
+    context-path: /app/shop-order
+    session:
+      timeout: 600s
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/shop
+    username: postgres
+    password: admin
+    driverClassName: org.postgresql.Driver
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true

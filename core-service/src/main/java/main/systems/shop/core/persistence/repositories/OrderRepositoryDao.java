@@ -1,6 +1,6 @@
 package main.systems.shop.core.persistence.repositories;
 
-import main.systems.shop.core.persistence.entity.model.Order;
+import main.systems.shop.api.entity.model.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

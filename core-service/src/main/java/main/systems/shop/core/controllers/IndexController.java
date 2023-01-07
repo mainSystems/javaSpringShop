@@ -1,8 +1,8 @@
 package main.systems.shop.core.controllers;
 
 import lombok.extern.slf4j.Slf4j;
-import main.systems.shop.api.dto.AuthRequestDto;
-import main.systems.shop.api.dto.AuthResponseDto;
+import main.systems.shop.api.entity.dto.AuthRequestDto;
+import main.systems.shop.api.entity.dto.AuthResponseDto;
 import main.systems.shop.core.security.service.JwtService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

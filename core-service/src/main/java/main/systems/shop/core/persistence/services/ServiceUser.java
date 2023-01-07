@@ -1,8 +1,8 @@
 package main.systems.shop.core.persistence.services;
 
 import lombok.RequiredArgsConstructor;
-import main.systems.shop.core.persistence.entity.model.Customer;
-import main.systems.shop.core.persistence.entity.model.Role;
+import main.systems.shop.api.entity.model.Customer;
+import main.systems.shop.api.entity.model.Role;
 import main.systems.shop.core.persistence.repositories.CustomerRepository;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

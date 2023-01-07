@@ -1,7 +1,7 @@
 package main.systems.shop.core.controllers;
 
 import lombok.extern.slf4j.Slf4j;
-import main.systems.shop.api.dto.CountProductsDto;
+import main.systems.shop.api.entity.dto.CountProductsDto;
 import main.systems.shop.core.persistence.services.ServiceOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
