@@ -4,20 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 5. Spring Cloud. Часть 1 - worked now!">
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/templates/old/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/templates/old/list_cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/templates/old/mainPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/templates/productForm.html" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 5. Spring Cloud. Часть 1 - some tune">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/security/configs/securityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/security/configs/securityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/controllers/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/controllers/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/controllers/OrderController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/controllers/OrderController2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/OrderController2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/OrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/OrderRepositoryDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/services/ServiceOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/templates/productForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/resources/templates/old/productForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/controllers/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/controllers/OrderController2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/OrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/OrderRepositoryDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/services/ServiceOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/templates/productForm.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,11 +97,11 @@
       <recent name="C:\java\javaSpringShop\order-service\src\main\java\main\systems\shop\order\repositories" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\java\javaSpringShop\core-service\src\main\resources\templates\old" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="C:\java\javaSpringShop\src\main\java\main\systems\persistence\dto" />
       <recent name="C:\java\javaSpringShop\src\main\resources\configs" />
       <recent name="C:\java\javaSpringShop\src\main\resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="main.systems.soap" />
@@ -194,8 +194,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ShopOrderWebApp" />
         <item itemvalue="Application.ShopCoreWebApp" />
+        <item itemvalue="Application.ShopOrderWebApp" />
         <item itemvalue="Application.OrderCoreWebApp" />
         <item itemvalue="Application.ShopWebApp (1)" />
         <item itemvalue="Application.ShopWebApp" />
@@ -540,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673167988087</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Урок 5. Spring Cloud. Часть 1 - some tune">
+      <created>1673169255770</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1673169255770</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -585,11 +592,11 @@
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - cut controllers" />
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - cut controllers v2" />
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - create OrderDto" />
-    <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - some tune" />
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - make order-service" />
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - not worked when linked" />
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - worked now!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 5. Spring Cloud. Часть 1 - worked now!" />
+    <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - some tune" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 5. Spring Cloud. Часть 1 - some tune" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
