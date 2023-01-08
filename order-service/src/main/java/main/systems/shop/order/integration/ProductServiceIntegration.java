@@ -12,7 +12,7 @@ import java.util.Optional;
 public class ProductServiceIntegration {
     private final RestTemplate restTemplate;
 
-    public Optional<ProductDto> getProductsById(Long id) {
-        return Optional.ofNullable(restTemplate.getForObject("http://localhost:8180/app/api/v1/shop/product/" + id, ProductDto.class));
+    public Optional<ProductDto> getProductsById(Long productId) {
+        return Optional.ofNullable(restTemplate.getForObject("http://localhost:8180/app/api/v1/shop/product/" + productId, ProductDto.class));
     }
 }

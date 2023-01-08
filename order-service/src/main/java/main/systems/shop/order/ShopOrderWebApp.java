@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
 @EntityScan("main.systems.shop.api")
-public class OrderCoreWebApp {
+public class ShopOrderWebApp {
     public static void main(String[] args) {
-        SpringApplication.run(OrderCoreWebApp.class, args);
+        SpringApplication.run(ShopOrderWebApp.class, args);
     }
 }

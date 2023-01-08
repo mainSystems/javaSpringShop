@@ -1,7 +1,7 @@
 server:
   port: 8181
   servlet:
-    context-path: /app/shop-order
+    context-path: /app
     session:
       timeout: 600s
 

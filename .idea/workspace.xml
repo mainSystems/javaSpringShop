@@ -4,85 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 5. Spring Cloud. Часть 1 - some tune">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/entity/dto/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/entity/dto/OrderDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/entity/dto/ProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/entity/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/entity/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/entity/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/entity/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/OrderCoreWebApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/configs/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/integration/CustomerServiceIntegration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/integration/ProductServiceIntegration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/repositories/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/repositories/OrderRepositoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/services/ServiceOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 5. Spring Cloud. Часть 1 - make order-service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/dto/AuthRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/entity/dto/AuthRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/dto/AuthResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/entity/dto/AuthResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/dto/CountProductsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/entity/dto/CountProductsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/main/systems/shop/api/dto/AuthRequestDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/main/systems/shop/api/dto/AuthResponseDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/main/systems/shop/api/dto/CountProductsDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/ShopCoreWebApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/ShopCoreWebApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/OrderController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/OrderController2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/converters/CustomerConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/converters/CustomerConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/converters/ProductConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/converters/ProductConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/entity/dto/CustomerDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/entity/dto/OrderDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/entity/dto/ProductDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/entity/model/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/entity/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/entity/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/entity/model/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/CustomerRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/CustomerRepositoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/OrderRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/OrderRepositoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/ProductRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/ProductRepositoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/RoleRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/repositories/RoleRepositoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/services/ServiceCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/services/ServiceCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/services/ServiceOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/services/ServiceOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/services/ServiceProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/services/ServiceProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/services/ServiceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/persistence/services/ServiceUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/soap/config/WebServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/soap/config/WebServiceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/ShopCoreWebApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/ShopCoreWebApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/controllers/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/controllers/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/converters/CustomerConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/converters/ProductConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/entity/model/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/entity/model/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/entity/model/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/entity/model/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/CustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/CustomerRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/CustomerRepositoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/CustomerRepositoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/OrderRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/OrderRepositoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/OrderRepositoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/ProductRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/ProductRepositoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/ProductRepositoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/RoleRepositoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/repositories/RoleRepositoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/services/ServiceOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/services/ServiceOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/services/ServiceProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/services/ServiceProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/services/ServiceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/persistence/services/ServiceUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/soap/config/WebServiceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/soap/config/WebServiceConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/static/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/OrderCoreWebApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/ShopOrderWebApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/integration/ProductServiceIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/integration/ProductServiceIntegration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,6 +125,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShopOrderWebApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.systems.shop.order.ShopOrderWebApp" />
+      <module name="order-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.systems.shop.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShopWebApp (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.systems.ShopWebApp" />
       <module name="core-service" />
@@ -231,19 +177,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringShopApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.systems.SpringShop.SpringShopApplication" />
-      <module name="SpringShop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.systems.SpringShop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestingHibernate2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.systems.TestingHibernate2" />
       <module name="SpringShop" />
@@ -260,10 +193,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ShopCoreWebApp" />
+        <item itemvalue="Application.ShopOrderWebApp" />
         <item itemvalue="Application.ShopWebApp (1)" />
         <item itemvalue="Application.ShopWebApp" />
         <item itemvalue="Application.TestingHibernate2" />
-        <item itemvalue="Application.SpringShopApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -563,7 +496,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672970248524</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Урок 5. Spring Cloud. Часть 1 - make order-service">
+      <created>1673130323534</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1673130323534</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Урок 5. Spring Cloud. Часть 1 - make order-service">
+      <created>1673130346724</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1673130346724</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -587,7 +534,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit before security" />
     <MESSAGE value="&quot;Урок 11. Spring Security&quot; all done" />
     <MESSAGE value="&quot;Урок 11. Spring Security&quot; added converters" />
     <MESSAGE value="&quot;Урок 11. Spring Security&quot; arranged" />
@@ -612,7 +558,8 @@
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - cut controllers v2" />
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - create OrderDto" />
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - some tune" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 5. Spring Cloud. Часть 1 - some tune" />
+    <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - make order-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 5. Spring Cloud. Часть 1 - make order-service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

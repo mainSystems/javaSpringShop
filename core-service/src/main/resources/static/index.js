@@ -2,6 +2,7 @@ angular.module('appShop', ['ngStorage'])
     .controller('indexController', function($scope, $http, $localStorage) {
     const contextAuthPath='http://localhost:8180/app/auth';
     const contextPath='http://localhost:8180/app/api/v1/shop';
+    const contextOrderPath='http://localhost:8181/app/api/v1/shop';
 
     if($localStorage.marketUser) {
         try {
@@ -61,7 +62,8 @@ angular.module('appShop', ['ngStorage'])
     };
 
     $scope.newOrder = function() {
-        $http.get(contextPath + '/new_order')
+        $http.get(contextOrderPath + '/new_order')
+//        $http.get(contextPath + '/new_order')
         .then(function (response){
             $scope.loadProducts();
         });
@@ -69,7 +71,8 @@ angular.module('appShop', ['ngStorage'])
 
     $scope.changeProductCount = function(productId, productCount) {
         $http({
-            url: contextPath + '/productsCount',
+            url: contextOrderPath + '/productsCount',
+//            url: contextPath + '/productsCount',
             method: 'POST',
             params: {
                 productId: productId,
@@ -83,7 +86,8 @@ angular.module('appShop', ['ngStorage'])
 
     $scope.purgeProduct = function(productId) {
             $http({
-                url: contextPath + '/products',
+                url: contextOrderPath + '/products',
+//                url: contextPath + '/products',
                 method: 'DELETE',
                 params: {
                     productId: productId
@@ -95,7 +99,8 @@ angular.module('appShop', ['ngStorage'])
 
     $scope.getProductCount = function(productId) {
             $http({
-                url: contextPath + '/productsCount',
+                url: contextOrderPath + '/productsCount',
+//                url: contextPath + '/productsCount',
                 method: 'GET',
                 params: {
                     productId: productId
