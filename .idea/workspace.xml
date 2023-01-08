@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 5. Spring Cloud. Часть 1 - not worked when linked">
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 5. Spring Cloud. Часть 1 - worked now!">
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/templates/old/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/templates/old/list_cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/templates/old/mainPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/templates/productForm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/entity/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/main/systems/shop/api/entity/dto/CustomerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/security/configs/securityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/security/configs/securityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/security/configs/securityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/security/configs/securityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/static/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/integration/ProductServiceIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/integration/ProductServiceIntegration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/integration/ProductServiceIntegration.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/integration/ProductServiceIntegration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/controllers/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/controllers/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/controllers/OrderController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/controllers/OrderController2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +79,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/java/javaSpringShop/api/src/main/java/main/systems/shop/api/dto",
+    "last_opened_file_path": "C:/java/javaSpringShop/order-service/src/main/resources/templates",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -85,11 +90,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\java\javaSpringShop\order-service\src\main\resources\templates" />
+      <recent name="C:\java\javaSpringShop\order-service\src\main\resources" />
       <recent name="C:\java\javaSpringShop\api\src\main\java\main\systems\shop\api\dto" />
       <recent name="C:\java\javaSpringShop\order-service\src\main\java\main\systems\shop\order\entity\dto" />
       <recent name="C:\java\javaSpringShop\order-service\src\main\java\main\systems\shop\order\repositories" />
-      <recent name="C:\java\javaSpringShop\order-service\src\main\java\main\systems\shop\order\controllers" />
-      <recent name="C:\java\javaSpringShop\order-service\src\main\java\main\systems\shop\order" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -521,7 +526,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673136735687</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Урок 5. Spring Cloud. Часть 1 - worked now!">
+      <created>1673167969798</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1673167969798</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Урок 5. Spring Cloud. Часть 1 - worked now!">
+      <created>1673167988087</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1673167988087</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -545,7 +564,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Урок 11. Spring Security&quot; added converters" />
     <MESSAGE value="&quot;Урок 11. Spring Security&quot; arranged" />
     <MESSAGE value="&quot;Урок 11. Spring Security&quot; csrf().disable()" />
     <MESSAGE value="&quot;Урок 11. Spring Security&quot; some tune" />
@@ -570,7 +588,8 @@
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - some tune" />
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - make order-service" />
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - not worked when linked" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 5. Spring Cloud. Часть 1 - not worked when linked" />
+    <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - worked now!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 5. Spring Cloud. Часть 1 - worked now!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

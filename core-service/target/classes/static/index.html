@@ -16,7 +16,7 @@
 
     <div>
         <button class="btn btn-primary btn-sm mb-3" ng-click="newOrder()">Create New order</button>
-        <a href="api/v1/shop/list_order" class="btn btn-primary btn-sm mb-3" target="_blank">List order</a>
+        <a href="http://localhost:8181/app/api/v1/shop/list_order" class="btn btn-primary btn-sm mb-3" target="_blank">List order</a>
     </div>
 
 
@@ -42,7 +42,7 @@
                 <button class="btn btn-outline-info" ng-click="changeProductCount(product.id, 1)">+</button>
             </td>
             <td>
-                <a href="api/v1/shop/products?idProduct={{product.id}}"
+                <a href="http://localhost:8181/app/api/v1/shop/products?idProduct={{product.id}}"
                    class="btn btn-outline-success">Add/Delete custom count</a>
                 <button class="btn btn-outline-info" ng-click="purgeProduct(product.id)">Delete</button>
             </td>
