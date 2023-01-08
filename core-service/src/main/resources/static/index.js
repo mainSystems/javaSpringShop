@@ -2,6 +2,7 @@ angular.module('appShop', ['ngStorage'])
     .controller('indexController', function($scope, $http, $localStorage) {
     const contextAuthPath='http://localhost:8180/app/auth';
     const contextPath='http://localhost:8180/app/api/v1/shop';
+//    const contextOrderPath='http://localhost:8180/app/api/v1/shop';
     const contextOrderPath='http://localhost:8181/app/api/v1/shop';
 
     if($localStorage.marketUser) {

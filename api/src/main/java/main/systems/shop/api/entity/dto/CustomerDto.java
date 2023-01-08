@@ -13,6 +13,8 @@ public class CustomerDto {
     private String password;
     private Collection<Role> roles;
 
+    public CustomerDto() {
+    }
     public CustomerDto(Customer customer) {
         this.id = customer.getId();
         this.title = customer.getTitle();

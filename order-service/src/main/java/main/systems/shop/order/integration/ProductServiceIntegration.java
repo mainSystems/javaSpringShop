@@ -2,6 +2,7 @@ package main.systems.shop.order.integration;
 
 import lombok.RequiredArgsConstructor;
 import main.systems.shop.api.entity.dto.ProductDto;
+import main.systems.shop.api.entity.model.Product;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -13,6 +14,7 @@ public class ProductServiceIntegration {
     private final RestTemplate restTemplate;
 
     public Optional<ProductDto> getProductsById(Long productId) {
+        System.out.println("productId = " + productId);
         return Optional.ofNullable(restTemplate.getForObject("http://localhost:8180/app/api/v1/shop/product/" + productId, ProductDto.class));
     }
 }

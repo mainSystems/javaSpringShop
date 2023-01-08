@@ -36,7 +36,8 @@ public class securityConfig {
                 "/index.js",
                 "/css/**",
                 "/img/**",
-                "/ws/**"
+                "/ws/**",
+                "/api/v1/shop/**"
         );
     }
 
