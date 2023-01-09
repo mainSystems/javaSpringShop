@@ -2,19 +2,25 @@ package main.systems.shop.order.integration;
 
 import lombok.RequiredArgsConstructor;
 import main.systems.shop.api.entity.dto.ProductDto;
-import main.systems.shop.api.entity.model.Product;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
-import org.springframework.web.client.RestTemplate;
-
-import java.util.Optional;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
 
 @Component
 @RequiredArgsConstructor
 public class ProductServiceIntegration {
-    private final RestTemplate restTemplate;
+    private final WebClient productServiceWebClient;
 
-    public Optional<ProductDto> getProductsById(Long productId) {
-        System.out.println("productId = " + productId);
-        return Optional.ofNullable(restTemplate.getForObject("http://localhost:8180/app/api/v1/shop/product/" + productId, ProductDto.class));
+    public ProductDto getProductsById(Long productId) {
+        return productServiceWebClient.get()
+                .uri("/api/v1/shop/product/" + productId)
+                .retrieve()
+                .onStatus(
+                        httpStatus -> httpStatus.value() == HttpStatus.NOT_FOUND.value(),
+                        clientResponse -> Mono.error(new Throwable("Product not found"))
+                )
+                .bodyToMono(ProductDto.class)
+                .block();
     }
 }

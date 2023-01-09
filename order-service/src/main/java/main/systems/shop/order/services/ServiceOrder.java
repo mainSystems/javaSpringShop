@@ -44,7 +44,7 @@ public class ServiceOrder {
 
     public void addProducts(ProductDto product, Integer count) {
         if (product != null && count > 0) {
-            CustomerDto customer = customerServiceIntegration.getCustomerById(1L).orElseThrow(); //FIX ME Throw readable Exception
+            CustomerDto customer = customerServiceIntegration.getCustomerById(1L);
             orderRepository.addProduct(product, count, customer);
         }
     }
@@ -57,12 +57,12 @@ public class ServiceOrder {
         String isDel = (productCount < 0) ? "del" : "add";
         switch (isDel) {
             case "add": {
-                ProductDto product = productServiceIntegration.getProductsById(productId).orElseThrow(); //FIX ME Throw readable Exception
+                ProductDto product = productServiceIntegration.getProductsById(productId);
                 addProducts(product, productCount);
                 break;
             }
             case "del": {
-                ProductDto product = productServiceIntegration.getProductsById(productId).orElseThrow(); //FIX ME Throw readable Exception
+                ProductDto product = productServiceIntegration.getProductsById(productId);
                 delProduct(product, productCount * -1);
                 break;
             }
@@ -78,7 +78,7 @@ public class ServiceOrder {
     }
 
     public void purgeProductById(Long productId) {
-        ProductDto product = productServiceIntegration.getProductsById(productId).orElseThrow(); //FIX ME Throw readable Exception
+        ProductDto product = productServiceIntegration.getProductsById(productId);
         orderRepository.purgeProduct(product);
     }
 

@@ -18,3 +18,15 @@ spring:
   jackson:
     serialization:
       INDENT_OUTPUT: true
+
+  integrations:
+    product-service:
+      url: http://localhost:8180/app
+      read-timeout: 10000
+      write-timeout: 5000
+      connect-timeout: 5000
+    customer-service:
+      url: http://localhost:8180/app
+      read-timeout: 10000
+      write-timeout: 5000
+      connect-timeout: 5000

@@ -40,7 +40,7 @@ public class OrderController {
 
     @GetMapping("/productsCount")
     public long getProductCount(@RequestParam Long productId) {
-        ProductDto product = productServiceIntegration.getProductsById(productId).orElseThrow(); //FIX ME Throw readable Exception
+        ProductDto product = productServiceIntegration.getProductsById(productId);
         return orderService.getOrderProductCount(product);
     }
 
