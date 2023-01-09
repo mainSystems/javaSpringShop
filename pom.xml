@@ -8,6 +8,7 @@
         <module>core-service</module>
         <module>api</module>
         <module>order-service</module>
+        <module>front-service</module>
     </modules>
 
     <groupId>main.systems</groupId>

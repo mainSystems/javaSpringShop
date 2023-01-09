@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @Slf4j
-@CrossOrigin(origins = "http://localhost:8180")
+@CrossOrigin("*")
 @RequestMapping("/api/v1/shop")
 public class OrderController2 {
     @Autowired

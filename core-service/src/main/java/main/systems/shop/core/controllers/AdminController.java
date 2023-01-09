@@ -18,7 +18,6 @@ public class AdminController {
     @Autowired
     private ServiceUser userService;
 
-
     @GetMapping("/admin/user_info")
     public List<CustomerDto> getAllCustomers() {
         return userService.getAllCustomer().stream().map(customer -> new CustomerDto(customer)).toList();

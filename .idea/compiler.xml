@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JavaServlet" />
+        <module name="front-service" />
         <module name="api" />
         <module name="order-service" />
         <module name="core-service" />
@@ -22,6 +23,7 @@
       <module name="JavaServlet" options="-parameters" />
       <module name="SpringShop" options="" />
       <module name="core-service" options="-parameters" />
+      <module name="front-service" options="-parameters" />
       <module name="order-service" options="-parameters" />
     </option>
   </component>

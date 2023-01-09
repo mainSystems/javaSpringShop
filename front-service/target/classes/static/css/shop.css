@@ -1,0 +1,126 @@
+body {
+  background-image: url('http://localhost:8000/img/background1.jpg'),
+  url('http://localhost:8000/img/background2.jpg'),
+  url('http://localhost:8000/img/background3.jpg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+table.containerProducts {
+  font-family: "hack";
+  mix-blend-mode: luminosity;
+  color: #1e2128 !important;
+  border: 1px solid #1C6EA4;
+  background-color: #77808f;
+  width: 55%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table.containerProducts tr:nth-child(even) {
+  background: #aac7e3;
+}
+
+table.containerProducts thead {
+  background: -moz-linear-gradient(to bottom, #aac7e3 0%, #d8eded 100%);
+  background: -webkit-linear-gradient(to bottom, #aac7e3 0%, #d8eded 100%);
+  background: linear-gradient(to top, #aac7e3 0%, #d8eded 100%);
+  border-bottom: 2px solid #444444;
+}
+
+p, h3 {
+  font-family: "hack";
+  mix-blend-mode: luminosity;
+  font-size: 22px;
+  color: #A4EEEC;
+}
+
+table.containerProducts thead th {
+  font-family: "hack";
+  mix-blend-mode: luminosity;
+  color: #222930;
+  border-left: 2px solid #D0E4F5;
+  font: caption;
+}
+
+input, button, a {
+  mix-blend-mode: luminosity;
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: hack,hack;
+  font-size: 10px;
+  font-weight: 80;
+  justify-content: center;
+  line-height: 25px;
+  margin: 0;
+  min-height: 20px;
+  outline: none;
+  overflow: visible;
+  padding: 1px 2px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  input, button, a {
+    padding: 4px 10px;
+  }
+}
+
+input:before,
+input:after,
+button:before,
+button:after,
+a:before,
+a:after {
+  border-radius: 80px;
+}
+
+input:after,
+button:after,
+a:after {
+  background-color: initial;
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+input:hover:not(:disabled):after,
+button:hover:not(:disabled):after,
+a:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
