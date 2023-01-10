@@ -1,0 +1,21 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: 'http://localhost:8000'
+            allowedMethods:
+              - GET
+              - POST
+            allowedHeaders: "*"
+    routes:
+      - id: core-service
+        uri: http://localhost:8080
+      - id: order-service
+        uri: http://localhost:8081

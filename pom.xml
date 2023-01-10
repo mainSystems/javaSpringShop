@@ -9,6 +9,7 @@
         <module>api</module>
         <module>order-service</module>
         <module>front-service</module>
+        <module>gateway</module>
     </modules>
 
     <groupId>main.systems</groupId>

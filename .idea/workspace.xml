@@ -4,60 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 5. Spring Cloud. Часть 2 - RestTemplate -&gt; WebClient (one place configuratio - not working)">
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-service/src/main/java/main/systems/shop/front/ShopFrontWebApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-service/src/main/resources/application.yaml" afterDir="false" />
+    <list default="true" id="1d4b6727-c548-43be-af48-2db8d8b2f623" name="Changes" comment="Урок 5. Spring Cloud. Часть 2 - added front-service (one place configuratio - not working)">
+      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/main/systems/shop/gateway/ShopGatewayApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/java/main/systems/shop/front/controllers/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/main/systems/shop/core/controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/css/shop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/img/background1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/img/background1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/img/background2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/img/background2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/img/background3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/img/background3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/templates/old/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/templates/old/info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/templates/old/list_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/templates/old/list_cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/templates/old/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/templates/old/mainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/templates/old/productForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/templates/old/productForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/controllers/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/controllers/IndexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/controllers/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/main/systems/shop/core/controllers/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/static/css/shop.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/static/img/background1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/static/img/background2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/static/img/background3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/static/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/templates/old/info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/templates/old/list_cart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/templates/old/mainPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/templates/old/productForm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/configs/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/configs/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/configs/properties/CustomerServiceIntegrationProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/integration/properties/CustomerServiceIntegrationProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/configs/properties/ProductServiceIntegrationProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/integration/properties/ProductServiceIntegrationProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/main/systems/shop/order/controllers/OrderController2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/templates/old/info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/templates/old/list_cart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/templates/old/mainPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/templates/productForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/templates/productForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/configs/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/configs/AppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/configs/properties/CustomerServiceIntegrationProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/configs/properties/ProductServiceIntegrationProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/controllers/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/controllers/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/controllers/OrderController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/main/systems/shop/order/controllers/OrderController2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/templates/old/info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/templates/old/list_cart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/templates/old/mainPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/templates/productForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/templates/productForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +74,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/java/javaSpringShop/front-service/src/main/resources/templates",
+    "last_opened_file_path": "C:/java/javaSpringShop/gateway/src/main/resources",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -131,11 +85,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\java\javaSpringShop\gateway\src\main\resources" />
       <recent name="C:\java\javaSpringShop\front-service\src\main\resources\templates" />
       <recent name="C:\java\javaSpringShop\front-service\src\main\resources" />
       <recent name="C:\java\javaSpringShop\order-service\src\main\resources\templates" />
       <recent name="C:\java\javaSpringShop\order-service\src\main\resources" />
-      <recent name="C:\java\javaSpringShop\api\src\main\java\main\systems\shop\api\dto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\java\javaSpringShop\front-service\src\main\resources\templates" />
@@ -253,13 +207,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668025735403</updated>
-    </task>
-    <task id="LOCAL-00004" summary="some css styling">
-      <created>1669026479878</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1669026479878</updated>
     </task>
     <task id="LOCAL-00005" summary="some css styling">
       <created>1669026486132</created>
@@ -597,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673297559127</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Урок 5. Spring Cloud. Часть 2 - added front-service (one place configuratio - not working)">
+      <created>1673306080252</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1673306080252</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -621,7 +575,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Урок 11. Spring Security&quot; some tune" />
     <MESSAGE value="&quot;Урок 12. Практика&quot; some tune" />
     <MESSAGE value="&quot;Урок 12. Практика&quot; add usersTake from DB" />
     <MESSAGE value="&quot;Урок 12. Практика&quot; reformat/optimize import" />
@@ -646,7 +599,8 @@
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - some tune" />
     <MESSAGE value="Урок 5. Spring Cloud. Часть 1 - clean core from order" />
     <MESSAGE value="Урок 5. Spring Cloud. Часть 2 - RestTemplate -&gt; WebClient (one place configuratio - not working)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 5. Spring Cloud. Часть 2 - RestTemplate -&gt; WebClient (one place configuratio - not working)" />
+    <MESSAGE value="Урок 5. Spring Cloud. Часть 2 - added front-service (one place configuratio - not working)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 5. Spring Cloud. Часть 2 - added front-service (one place configuratio - not working)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
