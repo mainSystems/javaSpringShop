@@ -1,0 +1,36 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: 'http://localhost:8000'
+            allowedMethods:
+              - GET
+              - POST
+            allowedHeaders: "*"
+    routes:
+      - id: core-service
+        uri: http://localhost:8080
+        predicates:
+          - Path=/core/**
+        filters:
+          - StripPrefix=1
+          - PrefixPath=/app
+          - JwtAuthFilter
+      - id: order-service
+        uri: http://localhost:8081
+        predicates:
+          - Path=/order/**
+        filters:
+          - StripPrefix=1
+          - PrefixPath=/app
+          - JwtAuthFilter
+jwt:
+  secret: Hjwjv5vvNX1v8se2AVPeibK6s0c89kFtNwsEvNWreguz6kVMf92ZkjSFp8rmA0jt
+  expire-time: 800000

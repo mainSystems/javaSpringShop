@@ -40,11 +40,11 @@ public class JwtService {
 
 
     public String getUsername(String bearerTokenValue) {
-        return parse(bearerTokenValue).getSubject();
+        return getClaims(bearerTokenValue).getSubject();
     }
 
     public List<GrantedAuthority> getAuthority(String bearerTokenValue) {
-        List<String> authority = (List<String>) parse(bearerTokenValue).get("authority");
+        List<String> authority = (List<String>) getClaims(bearerTokenValue).get("authority");
 
         return authority.stream()
                 .map(SimpleGrantedAuthority::new)
@@ -52,7 +52,7 @@ public class JwtService {
                 .toList();
     }
 
-    private Claims parse(String value) {
+    private Claims getClaims(String value) {
         return Jwts.parser()
                 .setSigningKey(properties.getSecret())
                 .parseClaimsJws(value)
